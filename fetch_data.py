@@ -4,9 +4,73 @@ import os
 import sys
 import requests
 
-API_URL = "https://api.open-meteo.com/v1/forecast?latitude=-26.316&longitude=27.833&current_weather=true"
+# Major cities covering all provinces across South Africa
+CITIES = [
+    {
+        "name": "Johannesburg",
+        "province": "Gauteng",
+        "lat": -26.2041,
+        "lon": 28.0473,
+        "tag": "Inland / Economic Hub"
+    },
+    {
+        "name": "Cape Town",
+        "province": "Western Cape",
+        "lat": -33.9249,
+        "lon": 18.4241,
+        "tag": "Coastal / Atlantic"
+    },
+    {
+        "name": "Durban",
+        "province": "KwaZulu-Natal",
+        "lat": -29.8587,
+        "lon": 31.0218,
+        "tag": "Coastal / Indian Ocean"
+    },
+    {
+        "name": "Pretoria",
+        "province": "Gauteng",
+        "lat": -25.7479,
+        "lon": 28.2293,
+        "tag": "Administrative Capital"
+    },
+    {
+        "name": "Gqeberha",
+        "province": "Eastern Cape",
+        "lat": -33.9608,
+        "lon": 25.6022,
+        "tag": "Coastal / Windy City"
+    },
+    {
+        "name": "Bloemfontein",
+        "province": "Free State",
+        "lat": -29.1181,
+        "lon": 26.2249,
+        "tag": "Judicial Capital / Central"
+    },
+    {
+        "name": "Mbombela",
+        "province": "Mpumalanga",
+        "lat": -25.4753,
+        "lon": 30.9694,
+        "tag": "Lowveld / Kruger Gateway"
+    },
+    {
+        "name": "Polokwane",
+        "province": "Limpopo",
+        "lat": -23.9045,
+        "lon": 29.4689,
+        "tag": "Northern Hub"
+    },
+    {
+        "name": "Kimberley",
+        "province": "Northern Cape",
+        "lat": -28.7282,
+        "lon": 24.7499,
+        "tag": "Diamond City / Karoo"
+    },
+]
 
-# WMO Weather interpretation codes (WW)
 WEATHER_CODES = {
     0: ("Clear sky", "☀️"),
     1: ("Mainly clear", "🌤️"),
@@ -27,62 +91,126 @@ WEATHER_CODES = {
     81: ("Moderate rain showers", "🌧️"),
     82: ("Violent rain showers", "⛈️"),
     95: ("Thunderstorm", "⚡"),
-    96: ("Thunderstorm with slight hail", "⛈️"),
-    99: ("Thunderstorm with heavy hail", "⛈️"),
+    96: ("Thunderstorm with hail", "⛈️"),
+    99: ("Heavy thunderstorm", "⛈️"),
 }
 
 
 def get_weather_info(weather_code):
-    return WEATHER_CODES.get(weather_code, ("Current Weather", "🌡️"))
+    return WEATHER_CODES.get(weather_code, ("Fair", "🌡️"))
 
 
-def fetch_weather():
-    response = requests.get(API_URL, timeout=15)
+def fetch_south_africa_weather():
+    lats = ",".join(str(c["lat"]) for c in CITIES)
+    lons = ",".join(str(c["lon"]) for c in CITIES)
+    url = f"https://api.open-meteo.com/v1/forecast?latitude={lats}&longitude={lons}&current_weather=true"
+    
+    response = requests.get(url, timeout=20)
     response.raise_for_status()
-    return response.json()
+    data = response.json()
+    
+    if isinstance(data, dict):
+        data = [data]
+        
+    results = []
+    for city, item in zip(CITIES, data):
+        current = item.get("current_weather", {})
+        temp = current.get("temperature", 0.0)
+        wind = current.get("windspeed", 0.0)
+        direction = current.get("winddirection", 0)
+        code = current.get("weathercode", 0)
+        condition_text, condition_icon = get_weather_info(code)
+        
+        results.append({
+            "name": city["name"],
+            "province": city["province"],
+            "tag": city["tag"],
+            "temperature": temp,
+            "windspeed": wind,
+            "winddirection": direction,
+            "condition_text": condition_text,
+            "condition_icon": condition_icon,
+        })
+    return results
 
 
-def generate_html(weather_data):
-    current = weather_data.get("current_weather", {})
-    temperature = current.get("temperature", "N/A")
-    windspeed = current.get("windspeed", "N/A")
-    winddirection = current.get("winddirection", "N/A")
-    weather_code = current.get("weathercode", 0)
-    api_time = current.get("time", "")
-
-    condition_text, condition_icon = get_weather_info(weather_code)
-
+def generate_html(weather_results):
     now_utc = datetime.datetime.now(datetime.timezone.utc)
-    # Lenasia is in SAST (UTC+2)
     sast_tz = datetime.timezone(datetime.timedelta(hours=2))
     now_sast = now_utc.astimezone(sast_tz)
 
     updated_sast_str = now_sast.strftime("%A, %d %B %Y | %H:%M SAST")
     updated_utc_str = now_utc.strftime("%Y-%m-%d %H:%M UTC")
 
+    # Aggregate stats
+    temps = [w["temperature"] for w in weather_results if isinstance(w["temperature"], (int, float))]
+    avg_temp = round(sum(temps) / len(temps), 1) if temps else 0
+    max_temp = max(temps) if temps else 0
+    min_temp = min(temps) if temps else 0
+    hottest_city = next((w["name"] for w in weather_results if w["temperature"] == max_temp), "N/A")
+    coolest_city = next((w["name"] for w in weather_results if w["temperature"] == min_temp), "N/A")
+
+    # City cards HTML
+    city_cards_html = ""
+    for city in weather_results:
+        city_cards_html += f"""
+        <article class="city-card">
+            <div class="card-header">
+                <div>
+                    <h3 class="city-name">{city['name']}</h3>
+                    <p class="city-province">{city['province']} &bull; <span class="city-tag">{city['tag']}</span></p>
+                </div>
+                <div class="weather-icon-badge">{city['condition_icon']}</div>
+            </div>
+            
+            <div class="card-main">
+                <div class="card-temp">{city['temperature']}<span class="unit">°C</span></div>
+                <div class="condition-pill">{city['condition_text']}</div>
+            </div>
+
+            <div class="card-metrics">
+                <div class="metric-item">
+                    <span class="metric-key">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
+                        Wind
+                    </span>
+                    <span class="metric-val">{city['windspeed']} km/h</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-key">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                        Heading
+                    </span>
+                    <span class="metric-val">{city['winddirection']}°</span>
+                </div>
+            </div>
+        </article>
+        """
+
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenasia Weather Station | Live Forecast</title>
+    <title>South Africa Live Weather | National Station & Forecast</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {{
-            --bg-gradient: radial-gradient(circle at 20% 20%, #1e293b 0%, #0f172a 100%);
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --card-border: rgba(255, 255, 255, 0.08);
-            --card-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            --bg: #070a12;
+            --surface: rgba(18, 25, 43, 0.75);
+            --surface-card: rgba(22, 32, 54, 0.65);
+            --surface-hover: rgba(30, 43, 72, 0.8);
+            --border: rgba(255, 255, 255, 0.08);
+            --border-accent: rgba(56, 189, 248, 0.35);
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
             --text-muted: #64748b;
-            --accent-blue: #38bdf8;
-            --accent-teal: #2dd4bf;
-            --accent-amber: #fbbf24;
-            --pill-bg: rgba(56, 189, 248, 0.1);
-            --pill-border: rgba(56, 189, 248, 0.25);
+            --accent-cyan: #38bdf8;
+            --accent-emerald: #10b981;
+            --accent-gold: #f59e0b;
+            --accent-rose: #f43f5e;
         }}
 
         * {{
@@ -93,90 +221,70 @@ def generate_html(weather_data):
 
         body {{
             font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #090d16;
+            background-color: var(--bg);
             background-image: 
-                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(45, 212, 191, 0.1) 0px, transparent 50%),
-                radial-gradient(at 50% 50%, #0f172a 0px, #070a12 100%);
+                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.1) 0px, transparent 40%),
+                radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.08) 0px, transparent 40%),
+                radial-gradient(at 50% 100%, rgba(245, 158, 11, 0.06) 0px, transparent 50%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 24px 16px;
             color: var(--text-primary);
+            padding: 40px 20px 60px;
         }}
 
-        .container {{
-            width: 100%;
-            max-width: 480px;
-            margin: auto;
+        .wrapper {{
+            max-width: 1200px;
+            margin: 0 auto;
         }}
 
-        .weather-card {{
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--card-border);
-            border-radius: 28px;
-            padding: 36px 32px;
-            box-shadow: var(--card-shadow);
-            position: relative;
-            overflow: hidden;
-        }}
-
-        .weather-card::before {{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent-blue), var(--accent-teal), transparent);
-            opacity: 0.8;
-        }}
-
-        .header {{
+        /* Header */
+        .top-bar {{
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 36px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
         }}
 
-        .location-group {{
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }}
-
-        .location-title {{
-            font-size: 1.75rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            color: #ffffff;
+        .brand {{
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 14px;
         }}
 
-        .location-sub {{
+        .flag-emblem {{
+            font-size: 2.2rem;
+            line-height: 1;
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+        }}
+
+        .brand-title {{
+            font-size: 1.85rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }}
+
+        .brand-subtitle {{
             font-size: 0.875rem;
             color: var(--text-secondary);
             font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 6px;
         }}
 
-        .badge-live {{
+        .live-tag {{
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-            padding: 6px 12px;
+            gap: 8px;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #34d399;
+            padding: 8px 16px;
             border-radius: 9999px;
-            background: var(--pill-bg);
-            border: 1px solid var(--pill-border);
-            color: var(--accent-blue);
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -185,113 +293,218 @@ def generate_html(weather_data):
         .pulse-dot {{
             width: 8px;
             height: 8px;
-            background-color: #22c55e;
+            background: #10b981;
             border-radius: 50%;
-            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
             animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
         }}
 
         @keyframes pulse {{
             to {{
-                box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+                box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
             }}
         }}
 
-        .hero-weather {{
-            text-align: center;
-            padding: 20px 0 28px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            margin-bottom: 24px;
-        }}
-
-        .weather-icon {{
-            font-size: 4rem;
-            line-height: 1;
-            margin-bottom: 12px;
-            filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));
-        }}
-
-        .temp-display {{
-            font-size: 4.5rem;
-            font-weight: 800;
-            line-height: 1;
-            letter-spacing: -0.04em;
-            background: linear-gradient(180deg, #ffffff 30%, #cbd5e1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 8px;
-        }}
-
-        .temp-unit {{
-            font-size: 2.25rem;
-            font-weight: 400;
-            vertical-align: super;
-            color: var(--accent-blue);
-            -webkit-text-fill-color: var(--accent-blue);
-        }}
-
-        .condition-badge {{
-            display: inline-block;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--accent-teal);
-            margin-top: 4px;
-        }}
-
-        .metrics-grid {{
+        /* National Overview Stats */
+        .stats-banner {{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 16px;
-            margin-bottom: 24px;
+            margin-bottom: 36px;
         }}
 
-        .metric-card {{
-            background: rgba(15, 23, 42, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 18px;
-            padding: 16px 18px;
+        .stat-card {{
+            background: var(--surface);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 20px 24px;
             display: flex;
             flex-direction: column;
             gap: 6px;
-            transition: transform 0.2s ease, border-color 0.2s ease;
+            position: relative;
+            overflow: hidden;
         }}
 
-        .metric-card:hover {{
-            transform: translateY(-2px);
-            border-color: rgba(56, 189, 248, 0.3);
+        .stat-card::after {{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent-cyan);
         }}
 
-        .metric-label {{
+        .stat-card.hot::after {{ background: var(--accent-rose); }}
+        .stat-card.cool::after {{ background: var(--accent-cyan); }}
+        .stat-card.avg::after {{ background: var(--accent-gold); }}
+
+        .stat-title {{
             font-size: 0.75rem;
-            font-weight: 600;
+            font-weight: 700;
+            color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.06em;
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-            gap: 6px;
         }}
 
-        .metric-value {{
-            font-size: 1.5rem;
-            font-weight: 700;
+        .stat-number {{
+            font-size: 2rem;
+            font-weight: 800;
             color: #ffffff;
+            letter-spacing: -0.02em;
         }}
 
-        .metric-sub {{
-            font-size: 0.75rem;
+        .stat-desc {{
+            font-size: 0.8rem;
             color: var(--text-secondary);
         }}
 
+        /* Grid Section */
+        .section-title {{
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #f1f5f9;
+        }}
+
+        .cities-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 48px;
+        }}
+
+        .city-card {{
+            background: var(--surface-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            position: relative;
+        }}
+
+        .city-card:hover {{
+            background: var(--surface-hover);
+            border-color: var(--border-accent);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px -10px rgba(0, 0, 0, 0.5);
+        }}
+
+        .card-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }}
+
+        .city-name {{
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+        }}
+
+        .city-province {{
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }}
+
+        .city-tag {{
+            color: var(--accent-cyan);
+            font-weight: 500;
+        }}
+
+        .weather-icon-badge {{
+            font-size: 2.2rem;
+            line-height: 1;
+        }}
+
+        .card-main {{
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 20px;
+        }}
+
+        .card-temp {{
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.04em;
+            color: #ffffff;
+        }}
+
+        .card-temp .unit {{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--accent-cyan);
+            vertical-align: super;
+        }}
+
+        .condition-pill {{
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-secondary);
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }}
+
+        .card-metrics {{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding-top: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }}
+
+        .metric-item {{
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }}
+
+        .metric-key {{
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }}
+
+        .metric-val {{
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }}
+
+        /* Footer */
         .footer {{
             text-align: center;
-            font-size: 0.75rem;
+            padding: 24px;
+            border-top: 1px solid var(--border);
             color: var(--text-muted);
-            line-height: 1.6;
+            font-size: 0.8rem;
+            line-height: 1.8;
         }}
 
         .footer a {{
-            color: var(--accent-blue);
+            color: var(--accent-cyan);
             text-decoration: none;
         }}
 
@@ -299,64 +512,77 @@ def generate_html(weather_data):
             text-decoration: underline;
         }}
 
-        .timestamp {{
+        .footer .time-stamp {{
             color: var(--text-secondary);
-            font-weight: 500;
-            margin-top: 4px;
+            font-weight: 600;
+        }}
+
+        @media (max-width: 640px) {{
+            body {{
+                padding: 20px 14px 40px;
+            }}
+            .brand-title {{
+                font-size: 1.5rem;
+            }}
+            .card-temp {{
+                font-size: 2.5rem;
+            }}
+            .cities-grid {{
+                grid-template-columns: 1fr;
+            }}
         }}
     </style>
 </head>
 <body>
-    <main class="container">
-        <div class="weather-card">
-            <header class="header">
-                <div class="location-group">
-                    <h1 class="location-title">Lenasia</h1>
-                    <div class="location-sub">
-                        <span>Gauteng, South Africa</span>
-                        <span>•</span>
-                        <span>-26.316°, 27.833°</span>
-                    </div>
+    <div class="wrapper">
+        <header class="top-bar">
+            <div class="brand">
+                <span class="flag-emblem">🇿🇦</span>
+                <div>
+                    <h1 class="brand-title">South Africa Weather</h1>
+                    <p class="brand-subtitle">Real-time provincial stations and meteorological monitoring</p>
                 </div>
-                <div class="badge-live">
-                    <span class="pulse-dot"></span>
-                    <span>Live</span>
-                </div>
-            </header>
+            </div>
+            <div class="live-tag">
+                <span class="pulse-dot"></span>
+                <span>Active Feed</span>
+            </div>
+        </header>
 
-            <section class="hero-weather">
-                <div class="weather-icon">{condition_icon}</div>
-                <div class="temp-display">{temperature}<span class="temp-unit">°C</span></div>
-                <div class="condition-badge">{condition_text}</div>
-            </section>
+        <!-- Stats Overview Banner -->
+        <section class="stats-banner">
+            <div class="stat-card avg">
+                <span class="stat-title">National Average</span>
+                <span class="stat-number">{avg_temp}°C</span>
+                <span class="stat-desc">Across all 9 monitored regions</span>
+            </div>
+            <div class="stat-card hot">
+                <span class="stat-title">Highest Temp</span>
+                <span class="stat-number">{max_temp}°C</span>
+                <span class="stat-desc">{hottest_city}</span>
+            </div>
+            <div class="stat-card cool">
+                <span class="stat-title">Lowest Temp</span>
+                <span class="stat-number">{min_temp}°C</span>
+                <span class="stat-desc">{coolest_city}</span>
+            </div>
+        </section>
 
-            <section class="metrics-grid">
-                <div class="metric-card">
-                    <div class="metric-label">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
-                        Wind Speed
-                    </div>
-                    <div class="metric-value">{windspeed} <span style="font-size: 0.875rem; font-weight: 500; color: var(--text-secondary);">km/h</span></div>
-                    <div class="metric-sub">Direction: {winddirection}°</div>
-                </div>
+        <!-- Cities Grid -->
+        <h2 class="section-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            Major Cities & Provincial Stations
+        </h2>
 
-                <div class="metric-card">
-                    <div class="metric-label">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></svg>
-                        Temperature
-                    </div>
-                    <div class="metric-value">{temperature} <span style="font-size: 0.875rem; font-weight: 500; color: var(--text-secondary);">°C</span></div>
-                    <div class="metric-sub">Lenasia Station</div>
-                </div>
-            </section>
+        <section class="cities-grid">
+            {city_cards_html}
+        </section>
 
-            <footer class="footer">
-                <div>Automated via <strong>GitHub Actions</strong> &bull; Source: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo API</a></div>
-                <div class="timestamp">Last updated: {updated_sast_str}</div>
-                <div class="timestamp" style="font-size: 0.7rem; color: var(--text-muted);">({updated_utc_str})</div>
-            </footer>
-        </div>
-    </main>
+        <footer class="footer">
+            <div>Automated by <strong>GitHub Actions</strong> &bull; Data provided by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo API</a></div>
+            <div>Last automated update: <span class="time-stamp">{updated_sast_str}</span> <span style="font-size: 0.72rem; color: var(--text-muted);">({updated_utc_str})</span></div>
+        </footer>
+    </div>
 </body>
 </html>
 """
@@ -364,22 +590,21 @@ def generate_html(weather_data):
 
 
 def main():
-    print("Fetching weather data for Lenasia...")
+    print("Fetching real-time weather data for South Africa...")
     try:
-        data = fetch_weather()
-        current = data.get("current_weather", {})
-        temp = current.get("temperature")
-        wind = current.get("windspeed")
-        print(f"Data retrieved successfully: Temp = {temp}°C, Wind Speed = {wind} km/h")
-        
-        html = generate_html(data)
+        results = fetch_south_africa_weather()
+        print(f"Successfully fetched weather for {len(results)} South African cities.")
+        for r in results:
+            print(f" - {r['name']} ({r['province']}): {r['temperature']}°C, {r['windspeed']} km/h [{r['condition_text']}]")
+
+        html = generate_html(results)
         output_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
         with open(output_file, "w", encoding="utf-8") as f:
             f.write(html)
-        
-        print(f"Successfully generated {output_file}")
+
+        print(f"Successfully updated {output_file}")
     except Exception as e:
-        print(f"Error fetching data or generating HTML: {e}", file=sys.stderr)
+        print(f"Error updating South Africa weather data: {e}", file=sys.stderr)
         sys.exit(1)
 
 
