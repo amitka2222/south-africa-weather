@@ -1,0 +1,5 @@
+# The snapshot is written by Linux CI and edited on Windows — pin line endings so
+# data/weather.json diffs stay small instead of showing up as whole-file rewrites.
+* text=auto eol=lf
+*.png binary
+*.svg text eol=lf

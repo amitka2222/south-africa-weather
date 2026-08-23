@@ -1,0 +1,17 @@
+{
+  "_comment": "Canonical station list. Read by fetch_data.py at build time and by assets/app.js in the browser. Keep every province represented.",
+  "cities": [
+    { "id": "jnb", "name": "Johannesburg", "province": "Gauteng",      "tag": "Highveld / Economic hub",     "lat": -26.2041, "lon": 28.0473 },
+    { "id": "pta", "name": "Pretoria",     "province": "Gauteng",      "tag": "Administrative capital",      "lat": -25.7479, "lon": 28.2293 },
+    { "id": "cpt", "name": "Cape Town",    "province": "Western Cape", "tag": "Coastal / Atlantic",          "lat": -33.9249, "lon": 18.4241 },
+    { "id": "dbn", "name": "Durban",       "province": "KwaZulu-Natal","tag": "Coastal / Indian Ocean",      "lat": -29.8587, "lon": 31.0218 },
+    { "id": "plz", "name": "Gqeberha",     "province": "Eastern Cape", "tag": "Coastal / Windy City",        "lat": -33.9608, "lon": 25.6022 },
+    { "id": "blm", "name": "Bloemfontein", "province": "Free State",   "tag": "Judicial capital / Central",  "lat": -29.0852, "lon": 26.1596 },
+    { "id": "mbb", "name": "Mbombela",     "province": "Mpumalanga",   "tag": "Lowveld / Kruger gateway",    "lat": -25.4753, "lon": 30.9694 },
+    { "id": "plk", "name": "Polokwane",    "province": "Limpopo",      "tag": "Northern hub / Bushveld",     "lat": -23.9045, "lon": 29.4689 },
+    { "id": "mah", "name": "Mahikeng",     "province": "North West",   "tag": "Provincial capital",          "lat": -25.8652, "lon": 25.6442 },
+    { "id": "kim", "name": "Kimberley",    "province": "Northern Cape","tag": "Diamond City / Karoo",        "lat": -28.7282, "lon": 24.7499 },
+    { "id": "upt", "name": "Upington",     "province": "Northern Cape","tag": "Kalahari / Hottest in SA",    "lat": -28.4478, "lon": 21.2561 },
+    { "id": "sut", "name": "Sutherland",   "province": "Northern Cape","tag": "Karoo / Coldest in SA",       "lat": -32.3968, "lon": 20.6647 }
+  ]
+}
