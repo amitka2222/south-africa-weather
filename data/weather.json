@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-24T01:05:09Z",
+ "generated": "2026-08-24T03:51:51Z",
  "source": "snapshot",
  "attribution": "Open-Meteo (https://open-meteo.com/)",
  "timezone": "Africa/Johannesburg",
@@ -13,18 +13,18 @@
    "lon": 28.0473,
    "elevation": 1749.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 10.8,
-    "feels": 8.0,
-    "humidity": 65,
+    "time": "2026-08-24T05:45",
+    "temp": 9.1,
+    "feels": 6.0,
+    "humidity": 76,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
     "cloud": 0,
-    "pressure": 1027.9,
-    "wind": 9.7,
-    "gust": 20.2,
-    "windDir": 12
+    "pressure": 1028.7,
+    "wind": 13.0,
+    "gust": 27.4,
+    "windDir": 350
    },
    "today": {
     "date": "2026-08-24",
@@ -125,18 +125,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 10.8,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 10.3,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 9.6,
@@ -268,6 +256,18 @@
      "temp": 13.1,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 12.7,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 12.4,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -280,18 +280,18 @@
    "lon": 28.2293,
    "elevation": 1376.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 11.7,
-    "feels": 9.8,
-    "humidity": 66,
+    "time": "2026-08-24T05:45",
+    "temp": 9.7,
+    "feels": 8.3,
+    "humidity": 86,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
     "cloud": 0,
-    "pressure": 1028.2,
-    "wind": 4.9,
-    "gust": 10.4,
-    "windDir": 6
+    "pressure": 1029.2,
+    "wind": 4.6,
+    "gust": 11.5,
+    "windDir": 18
    },
    "today": {
     "date": "2026-08-24",
@@ -392,18 +392,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 11.7,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 11.1,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 10.3,
@@ -535,6 +523,18 @@
      "temp": 14.4,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 13.6,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 13.1,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -547,18 +547,18 @@
    "lon": 18.4241,
    "elevation": 17.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 12.5,
-    "feels": 10.6,
+    "time": "2026-08-24T05:45",
+    "temp": 12.4,
+    "feels": 10.2,
     "humidity": 92,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
-    "cloud": 1,
-    "pressure": 1024.7,
-    "wind": 15.9,
-    "gust": 43.9,
-    "windDir": 155
+    "cloud": 0,
+    "pressure": 1024.2,
+    "wind": 17.4,
+    "gust": 47.9,
+    "windDir": 154
    },
    "today": {
     "date": "2026-08-24",
@@ -659,18 +659,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 12.5,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 12.4,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 12.4,
@@ -802,6 +790,18 @@
      "temp": 13.5,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 13.3,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 13.4,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -814,18 +814,18 @@
    "lon": 31.0218,
    "elevation": 25.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 13.7,
-    "feels": 13.1,
+    "time": "2026-08-24T05:45",
+    "temp": 13.3,
+    "feels": 12.5,
     "humidity": 87,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
     "cloud": 0,
-    "pressure": 1026.4,
-    "wind": 7.2,
-    "gust": 14.4,
-    "windDir": 305
+    "pressure": 1025.4,
+    "wind": 8.3,
+    "gust": 15.8,
+    "windDir": 318
    },
    "today": {
     "date": "2026-08-24",
@@ -926,18 +926,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 13.7,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 13.6,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 13.5,
@@ -1069,6 +1057,18 @@
      "temp": 13.3,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 13.1,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 12.6,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -1081,18 +1081,18 @@
    "lon": 25.6022,
    "elevation": 83.0,
    "current": {
-    "time": "2026-08-24T03:00",
+    "time": "2026-08-24T05:45",
     "temp": 10.5,
-    "feels": 9.4,
-    "humidity": 84,
+    "feels": 9.6,
+    "humidity": 83,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
-    "cloud": 14,
-    "pressure": 1025.0,
-    "wind": 3.6,
-    "gust": 7.9,
-    "windDir": 290
+    "cloud": 0,
+    "pressure": 1024.7,
+    "wind": 1.9,
+    "gust": 4.0,
+    "windDir": 292
    },
    "today": {
     "date": "2026-08-24",
@@ -1193,18 +1193,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 10.5,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 10.8,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 10.6,
@@ -1336,6 +1324,18 @@
      "temp": 12.7,
      "precipProb": 0,
      "code": 1
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 12.7,
+     "precipProb": 0,
+     "code": 1
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 12.8,
+     "precipProb": 0,
+     "code": 1
     }
    ]
   },
@@ -1348,18 +1348,18 @@
    "lon": 26.1596,
    "elevation": 1414.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 8.0,
-    "feels": 3.8,
-    "humidity": 33,
+    "time": "2026-08-24T05:45",
+    "temp": 6.4,
+    "feels": 2.1,
+    "humidity": 37,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
     "cloud": 0,
-    "pressure": 1025.9,
-    "wind": 8.2,
-    "gust": 13.7,
-    "windDir": 130
+    "pressure": 1025.4,
+    "wind": 8.9,
+    "gust": 15.8,
+    "windDir": 118
    },
    "today": {
     "date": "2026-08-24",
@@ -1460,18 +1460,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 8.0,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 7.5,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 6.9,
@@ -1603,6 +1591,18 @@
      "temp": 9.8,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 9.4,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 8.2,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -1615,18 +1615,18 @@
    "lon": 30.9694,
    "elevation": 674.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 12.5,
-    "feels": 12.2,
-    "humidity": 92,
+    "time": "2026-08-24T05:45",
+    "temp": 11.3,
+    "feels": 10.9,
+    "humidity": 95,
     "isDay": false,
     "precip": 0.0,
-    "code": 3,
-    "cloud": 98,
-    "pressure": 1028.4,
-    "wind": 4.4,
+    "code": 0,
+    "cloud": 9,
+    "pressure": 1028.3,
+    "wind": 4.0,
     "gust": 8.3,
-    "windDir": 261
+    "windDir": 249
    },
    "today": {
     "date": "2026-08-24",
@@ -1727,18 +1727,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 12.5,
-     "precipProb": 0,
-     "code": 3
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 12.7,
-     "precipProb": 0,
-     "code": 2
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 11.9,
@@ -1870,6 +1858,18 @@
      "temp": 12.9,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 12.4,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 11.8,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -1882,18 +1882,18 @@
    "lon": 29.4689,
    "elevation": 1311.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 10.5,
-    "feels": 8.7,
-    "humidity": 96,
+    "time": "2026-08-24T05:45",
+    "temp": 9.6,
+    "feels": 8.5,
+    "humidity": 99,
     "isDay": false,
     "precip": 0.0,
     "code": 3,
     "cloud": 100,
-    "pressure": 1028.7,
-    "wind": 12.2,
-    "gust": 25.2,
-    "windDir": 61
+    "pressure": 1029.7,
+    "wind": 5.8,
+    "gust": 15.1,
+    "windDir": 22
    },
    "today": {
     "date": "2026-08-24",
@@ -1994,18 +1994,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 10.5,
-     "precipProb": 0,
-     "code": 3
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 10.0,
-     "precipProb": 0,
-     "code": 3
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 9.7,
@@ -2137,6 +2125,18 @@
      "temp": 12.1,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 11.8,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 11.4,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -2149,18 +2149,18 @@
    "lon": 25.6442,
    "elevation": 1279.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 12.1,
-    "feels": 7.0,
-    "humidity": 26,
+    "time": "2026-08-24T05:45",
+    "temp": 12.6,
+    "feels": 9.1,
+    "humidity": 62,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
     "cloud": 0,
-    "pressure": 1025.3,
-    "wind": 14.5,
-    "gust": 22.7,
-    "windDir": 82
+    "pressure": 1026.7,
+    "wind": 16.1,
+    "gust": 27.0,
+    "windDir": 40
    },
    "today": {
     "date": "2026-08-24",
@@ -2261,18 +2261,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 12.1,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 12.5,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 12.9,
@@ -2404,6 +2392,18 @@
      "temp": 11.5,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 11.4,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 11.2,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -2416,18 +2416,18 @@
    "lon": 24.7499,
    "elevation": 1211.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 10.0,
-    "feels": 6.5,
-    "humidity": 29,
+    "time": "2026-08-24T05:45",
+    "temp": 9.2,
+    "feels": 5.4,
+    "humidity": 30,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
     "cloud": 0,
-    "pressure": 1025.4,
-    "wind": 3.3,
-    "gust": 7.2,
-    "windDir": 84
+    "pressure": 1024.9,
+    "wind": 5.1,
+    "gust": 10.1,
+    "windDir": 86
    },
    "today": {
     "date": "2026-08-24",
@@ -2528,18 +2528,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 10.0,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 10.2,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 10.3,
@@ -2671,6 +2659,18 @@
      "temp": 11.9,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 11.3,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 10.8,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -2683,18 +2683,18 @@
    "lon": 21.2561,
    "elevation": 805.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 8.8,
-    "feels": 4.6,
-    "humidity": 42,
+    "time": "2026-08-24T05:45",
+    "temp": 6.9,
+    "feels": 2.9,
+    "humidity": 45,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
     "cloud": 0,
-    "pressure": 1024.4,
-    "wind": 11.4,
-    "gust": 18.0,
-    "windDir": 55
+    "pressure": 1024.3,
+    "wind": 8.7,
+    "gust": 16.9,
+    "windDir": 63
    },
    "today": {
     "date": "2026-08-24",
@@ -2795,18 +2795,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 8.8,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 8.3,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 7.6,
@@ -2938,6 +2926,18 @@
      "temp": 12.3,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 11.6,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 10.7,
+     "precipProb": 0,
+     "code": 0
     }
    ]
   },
@@ -2950,18 +2950,18 @@
    "lon": 20.6647,
    "elevation": 1455.0,
    "current": {
-    "time": "2026-08-24T03:00",
-    "temp": 10.2,
-    "feels": 6.9,
-    "humidity": 34,
+    "time": "2026-08-24T05:45",
+    "temp": 9.8,
+    "feels": 6.3,
+    "humidity": 31,
     "isDay": false,
     "precip": 0.0,
     "code": 0,
     "cloud": 0,
-    "pressure": 1025.4,
-    "wind": 3.8,
-    "gust": 8.6,
-    "windDir": 287
+    "pressure": 1024.9,
+    "wind": 4.0,
+    "gust": 9.0,
+    "windDir": 309
    },
    "today": {
     "date": "2026-08-24",
@@ -3062,18 +3062,6 @@
     }
    ],
    "hourly": [
-    {
-     "time": "2026-08-24T03:00",
-     "temp": 10.2,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-08-24T04:00",
-     "temp": 10.1,
-     "precipProb": 0,
-     "code": 0
-    },
     {
      "time": "2026-08-24T05:00",
      "temp": 10.0,
@@ -3203,6 +3191,18 @@
     {
      "time": "2026-08-25T02:00",
      "temp": 12.7,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T03:00",
+     "temp": 11.9,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-08-25T04:00",
+     "temp": 11.4,
      "precipProb": 0,
      "code": 0
     }
