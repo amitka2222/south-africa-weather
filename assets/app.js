@@ -21,7 +21,7 @@
   const DAILY_FIELDS = "weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset," +
     "uv_index_max,precipitation_sum,precipitation_probability_max,wind_speed_10m_max";
 
-  const KEY = { units: "saw:units", theme: "saw:theme", sort: "saw:sort", cache: "saw:cache" };
+  const KEY = { units: "saw:units", theme: "saw:theme", sort: "saw:sort", province: "saw:province", cache: "saw:cache" };
 
   /* ---------- Weather codes ---------- */
 
@@ -87,6 +87,7 @@
   const state = {
     units: load(KEY.units) === "imperial" ? "imperial" : "metric",
     sort: load(KEY.sort) || "temp-desc",
+    province: load(KEY.province) || "all",
     query: "",
     data: null,
     source: null,
@@ -115,6 +116,20 @@
   }
 
   const fmtSpeed = (kmh) => (kmh == null ? "–" : Math.round(toSpeed(Number(kmh))));
+
+  const toPrecip = (mm) => (isImperial() ? mm * 0.0393701 : mm);
+  function fmtPrecip(mm) {
+    if (mm == null || Number.isNaN(Number(mm))) return "–";
+    const val = toPrecip(Number(mm));
+    return isImperial() ? `${val.toFixed(2)} in` : `${val.toFixed(1)} mm`;
+  }
+
+  function fmtPressure(hpa) {
+    if (hpa == null || Number.isNaN(Number(hpa))) return "–";
+    return isImperial()
+      ? `${(Number(hpa) * 0.02953).toFixed(2)} inHg`
+      : `${Math.round(Number(hpa))} hPa`;
+  }
 
   /* "2026-08-23T20:00" -> "20:00". Never touches Date, so it is timezone-proof. */
   const clockOf = (iso) => (typeof iso === "string" && iso.includes("T") ? iso.slice(11, 16) : "–");
@@ -276,7 +291,7 @@
 
   /* ---------- Rendering: 24-hour sparkline ---------- */
 
-  function sparkline(hours) {
+  function sparkline(hours, stationId) {
     const points = hours.filter((h) => typeof h.temp === "number");
     if (points.length < 2) return "";
 
@@ -293,17 +308,31 @@
     const stamp = (i) => clockOf(points[i]?.time);
     const marks = [0, Math.floor(points.length / 3), Math.floor((2 * points.length) / 3), points.length - 1];
 
+    const circles = points.map((h, i) => {
+      const cx = x(i).toFixed(1);
+      const cy = y(h.temp).toFixed(1);
+      const wx = describe(h.code, true);
+      const rain = h.precipProb != null ? `${h.precipProb}% rain` : "";
+      const info = `${stamp(i)} · ${fmtTemp(h.temp)} · ${wx.label}${rain ? " · " + rain : ""}`;
+      return `<circle class="spark-point" cx="${cx}" cy="${cy}" r="3" tabindex="0"
+                data-info="${esc(info)}" aria-label="${esc(info)}"/>`;
+    }).join("");
+
     return `
       <div class="spark">
         <div class="spark-head">
           <span>Next ${points.length} hours</span>
           <span class="spark-label">${fmtTemp(lo)} to ${fmtTemp(hi)}</span>
         </div>
-        <svg viewBox="0 -4 ${W} ${H + 8}" preserveAspectRatio="none" role="img"
-             aria-label="Temperature trend for the next ${points.length} hours, ${fmtTemp(lo)} to ${fmtTemp(hi)}">
-          <path class="spark-fill" d="${area}"/>
-          <path class="spark-line" d="${line}" vector-effect="non-scaling-stroke"/>
-        </svg>
+        <div class="spark-wrapper" data-station="${esc(stationId)}">
+          <div class="spark-tooltip" aria-hidden="true"></div>
+          <svg viewBox="0 -4 ${W} ${H + 8}" preserveAspectRatio="none" role="img"
+               aria-label="Temperature trend for the next ${points.length} hours, ${fmtTemp(lo)} to ${fmtTemp(hi)}">
+            <path class="spark-fill" d="${area}"/>
+            <path class="spark-line" d="${line}" vector-effect="non-scaling-stroke"/>
+            ${circles}
+          </svg>
+        </div>
         <div class="spark-axis">
           ${marks.map((i, n) => `<span>${n === 0 ? "Now" : esc(stamp(i))}</span>`).join("")}
         </div>
@@ -351,6 +380,9 @@
       const left = ((day.tmin - lo) / span) * 100;
       const width = Math.max(4, ((day.tmax - day.tmin) / span) * 100);
       const wx = describe(day.code, true);
+      const rainBadge = (day.precipProb && day.precipProb > 0)
+        ? `<span class="day-rain" title="${day.precipProb}% chance of rain">${icon("drop")}${day.precipProb}%</span>`
+        : `<span></span>`;
       return `
         <div class="day${i === 0 ? " is-today" : ""}">
           <span class="day-name">${esc(dayLabel(day.date, i))}</span>
@@ -360,6 +392,7 @@
                  --cool:${tempColor(day.tmin)};--warm:${tempColor(day.tmax)}"></div>
           </div>
           <span class="day-range">${fmtTemp(day.tmax)} <span>${fmtTemp(day.tmin)}</span></span>
+          ${rainBadge}
         </div>`;
     }).join("");
 
@@ -370,9 +403,9 @@
     const now = station.current;
     const today = station.today || {};
     const rows = [
-      ["Pressure", now.pressure == null ? "–" : `${Math.round(now.pressure)} hPa`],
+      ["Pressure", fmtPressure(now.pressure)],
       ["Cloud cover", now.cloud == null ? "–" : `${now.cloud}%`],
-      ["Rain today", today.precipSum == null ? "–" : `${today.precipSum} mm`],
+      ["Rain today", fmtPrecip(today.precipSum)],
       ["Peak wind today", `${fmtSpeed(today.windMax)} ${speedUnit()}`],
       ["Elevation", station.elevation == null ? "–" : `${Math.round(station.elevation)} m`],
       ["Coordinates", `${station.lat.toFixed(2)}, ${station.lon.toFixed(2)}`],
@@ -433,7 +466,7 @@
           </div>
         </div>
 
-        ${sparkline(station.hourly || [])}
+        ${sparkline(station.hourly || [], station.id)}
 
         <button type="button" class="more" aria-expanded="${open}" aria-controls="${panelId}">
           <span>${open ? "Hide" : "Forecast &amp; detail"}</span>${icon("chevron")}
@@ -489,8 +522,12 @@
 
   function visibleStations() {
     const q = state.query.trim().toLowerCase();
-    const list = state.data.stations.filter((s) =>
-      !q || `${s.name} ${s.province} ${s.tag}`.toLowerCase().includes(q));
+    const p = state.province;
+    const list = state.data.stations.filter((s) => {
+      const matchQuery = !q || `${s.name} ${s.province} ${s.tag}`.toLowerCase().includes(q);
+      const matchProvince = p === "all" || s.province === p;
+      return matchQuery && matchProvince;
+    });
 
     const by = {
       "temp-desc": (a, b) => b.current.temp - a.current.temp,
@@ -511,7 +548,8 @@
       ? stations.map(card).join("")
       : `<p class="empty">No station matches “${esc(state.query)}”.</p>`;
 
-    el.resultCount.textContent = state.query
+    const isFiltered = Boolean(state.query || state.province !== "all");
+    el.resultCount.textContent = isFiltered
       ? `${stations.length} of ${state.data.stations.length} stations`
       : `${state.data.stations.length} stations · 9 provinces`;
 
@@ -586,9 +624,29 @@
   /* ---------- Boot ---------- */
 
   const el = {};
-  ["summary", "grid", "compare", "search", "sort", "resultCount", "status", "statusText",
+  ["summary", "grid", "compare", "search", "province", "sort", "resultCount", "status", "statusText",
    "alert", "alertText", "themeBtn", "unitBtn", "unitLabel", "refreshBtn", "footerStamp"]
     .forEach((id) => { el[id] = document.getElementById(id); });
+
+  function handleSparkHover(event) {
+    const point = event.target.closest(".spark-point");
+    const wrapper = event.target.closest(".spark-wrapper");
+    if (!wrapper) return;
+    const tooltip = wrapper.querySelector(".spark-tooltip");
+    if (!tooltip) return;
+
+    if (point && (event.type === "mouseover" || event.type === "focusin")) {
+      const info = point.dataset.info;
+      if (!info) return;
+      const pointX = parseFloat(point.getAttribute("cx") || 0);
+      const pct = (pointX / 240) * 100;
+      tooltip.textContent = info;
+      tooltip.style.left = `${pct.toFixed(1)}%`;
+      tooltip.classList.add("is-visible");
+    } else if (event.type === "mouseout" || event.type === "focusout") {
+      tooltip.classList.remove("is-visible");
+    }
+  }
 
   function wireEvents() {
     let debounce;
@@ -598,12 +656,26 @@
       debounce = setTimeout(() => { state.query = value; paint(); }, 130);
     });
 
+    if (el.province) {
+      el.province.value = state.province;
+      el.province.addEventListener("change", (event) => {
+        state.province = event.target.value;
+        save(KEY.province, state.province);
+        paint();
+      });
+    }
+
     el.sort.value = state.sort;
     el.sort.addEventListener("change", (event) => {
       state.sort = event.target.value;
       save(KEY.sort, state.sort);
       paint();
     });
+
+    el.grid.addEventListener("mouseover", handleSparkHover);
+    el.grid.addEventListener("mouseout", handleSparkHover);
+    el.grid.addEventListener("focusin", handleSparkHover);
+    el.grid.addEventListener("focusout", handleSparkHover);
 
     el.unitBtn.addEventListener("click", () =>
       applyUnits(isImperial() ? "metric" : "imperial"));

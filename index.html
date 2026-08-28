@@ -127,6 +127,22 @@
              autocomplete="off" aria-label="Filter stations by city or province">
     </div>
     <div class="field field-select">
+      <label class="sr-only" for="province">Filter by province</label>
+      <select id="province">
+        <option value="all">All Provinces (9)</option>
+        <option value="Eastern Cape">Eastern Cape</option>
+        <option value="Free State">Free State</option>
+        <option value="Gauteng">Gauteng</option>
+        <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+        <option value="Limpopo">Limpopo</option>
+        <option value="Mpumalanga">Mpumalanga</option>
+        <option value="North West">North West</option>
+        <option value="Northern Cape">Northern Cape</option>
+        <option value="Western Cape">Western Cape</option>
+      </select>
+      <svg class="ico chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+    </div>
+    <div class="field field-select">
       <label class="sr-only" for="sort">Sort stations</label>
       <select id="sort">
         <option value="temp-desc">Warmest first</option>
