@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-04T18:03:41Z",
+ "generated": "2026-09-04T22:45:34Z",
  "source": "snapshot",
  "attribution": "Open-Meteo (https://open-meteo.com/)",
  "timezone": "Africa/Johannesburg",
@@ -13,261 +13,261 @@
    "lon": 28.0473,
    "elevation": 1749.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 11.8,
-    "feels": 8.3,
-    "humidity": 92,
+    "time": "2026-09-05T00:45",
+    "temp": 10.4,
+    "feels": 6.8,
+    "humidity": 89,
     "isDay": false,
-    "precip": 0.5,
-    "code": 80,
-    "cloud": 99,
-    "pressure": 1021.7,
-    "wind": 24.9,
-    "gust": 52.9,
-    "windDir": 95
+    "precip": 0.0,
+    "code": 1,
+    "cloud": 47,
+    "pressure": 1022.5,
+    "wind": 22.5,
+    "gust": 52.6,
+    "windDir": 87
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 81,
-    "tmax": 21.7,
-    "tmin": 10.7,
-    "sunrise": "2026-09-04T06:17",
-    "sunset": "2026-09-04T17:56",
-    "uvMax": 6.3,
-    "precipSum": 13.9,
-    "precipProb": 100,
-    "windMax": 24.9
+    "date": "2026-09-05",
+    "code": 51,
+    "tmax": 19.8,
+    "tmin": 9.1,
+    "sunrise": "2026-09-05T06:16",
+    "sunset": "2026-09-05T17:57",
+    "uvMax": 7.45,
+    "precipSum": 0.7,
+    "precipProb": 76,
+    "windMax": 23.5
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 81,
-     "tmax": 21.7,
-     "tmin": 10.7,
-     "sunrise": "2026-09-04T06:17",
-     "sunset": "2026-09-04T17:56",
-     "uvMax": 6.3,
-     "precipSum": 13.9,
-     "precipProb": 100,
-     "windMax": 24.9
-    },
-    {
      "date": "2026-09-05",
-     "code": 80,
-     "tmax": 19.9,
+     "code": 51,
+     "tmax": 19.8,
      "tmin": 9.1,
      "sunrise": "2026-09-05T06:16",
      "sunset": "2026-09-05T17:57",
      "uvMax": 7.45,
-     "precipSum": 2.9,
-     "precipProb": 75,
-     "windMax": 23.1
+     "precipSum": 0.7,
+     "precipProb": 76,
+     "windMax": 23.5
     },
     {
      "date": "2026-09-06",
      "code": 81,
-     "tmax": 16.7,
-     "tmin": 10.6,
+     "tmax": 16.0,
+     "tmin": 10.4,
      "sunrise": "2026-09-06T06:15",
      "sunset": "2026-09-06T17:57",
      "uvMax": 6.9,
-     "precipSum": 19.7,
+     "precipSum": 23.8,
      "precipProb": 100,
-     "windMax": 27.0
+     "windMax": 21.5
     },
     {
      "date": "2026-09-07",
-     "code": 53,
-     "tmax": 15.6,
-     "tmin": 11.2,
+     "code": 51,
+     "tmax": 16.0,
+     "tmin": 10.7,
      "sunrise": "2026-09-07T06:14",
      "sunset": "2026-09-07T17:57",
      "uvMax": 1.15,
-     "precipSum": 6.2,
-     "precipProb": 96,
-     "windMax": 21.2
+     "precipSum": 3.2,
+     "precipProb": 98,
+     "windMax": 20.8
     },
     {
      "date": "2026-09-08",
      "code": 51,
      "tmax": 16.6,
-     "tmin": 10.3,
+     "tmin": 10.6,
      "sunrise": "2026-09-08T06:12",
      "sunset": "2026-09-08T17:58",
      "uvMax": 7.55,
-     "precipSum": 0.6,
-     "precipProb": 59,
-     "windMax": 12.5
+     "precipSum": 0.9,
+     "precipProb": 54,
+     "windMax": 13.2
     },
     {
      "date": "2026-09-09",
      "code": 51,
-     "tmax": 17.3,
+     "tmax": 17.4,
      "tmin": 9.5,
      "sunrise": "2026-09-09T06:11",
      "sunset": "2026-09-09T17:58",
      "uvMax": 7.55,
-     "precipSum": 0.6,
-     "precipProb": 52,
-     "windMax": 7.6
+     "precipSum": 0.9,
+     "precipProb": 51,
+     "windMax": 8.2
     },
     {
      "date": "2026-09-10",
      "code": 51,
-     "tmax": 20.0,
-     "tmin": 9.8,
+     "tmax": 20.3,
+     "tmin": 10.3,
      "sunrise": "2026-09-10T06:10",
      "sunset": "2026-09-10T17:59",
      "uvMax": 7.6,
-     "precipSum": 1.2,
-     "precipProb": 22,
-     "windMax": 5.3
+     "precipSum": 1.5,
+     "precipProb": 36,
+     "windMax": 6.1
+    },
+    {
+     "date": "2026-09-11",
+     "code": 0,
+     "tmax": 21.9,
+     "tmin": 12.5,
+     "sunrise": "2026-09-11T06:09",
+     "sunset": "2026-09-11T17:59",
+     "uvMax": 7.9,
+     "precipSum": 0.0,
+     "precipProb": 6,
+     "windMax": 8.5
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 11.8,
-     "precipProb": 92,
-     "code": 80
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 11.2,
-     "precipProb": 88,
-     "code": 53
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 10.8,
-     "precipProb": 84,
-     "code": 51
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 10.7,
-     "precipProb": 78,
-     "code": 51
-    },
-    {
      "time": "2026-09-05T00:00",
-     "temp": 10.5,
-     "precipProb": 71,
-     "code": 3
+     "temp": 10.6,
+     "precipProb": 76,
+     "code": 2
     },
     {
      "time": "2026-09-05T01:00",
-     "temp": 10.3,
-     "precipProb": 63,
+     "temp": 10.4,
+     "precipProb": 53,
      "code": 1
     },
     {
      "time": "2026-09-05T02:00",
-     "temp": 9.8,
-     "precipProb": 55,
-     "code": 0
+     "temp": 10.0,
+     "precipProb": 35,
+     "code": 1
     },
     {
      "time": "2026-09-05T03:00",
-     "temp": 9.4,
-     "precipProb": 48,
-     "code": 0
+     "temp": 9.7,
+     "precipProb": 28,
+     "code": 1
     },
     {
      "time": "2026-09-05T04:00",
      "temp": 9.3,
-     "precipProb": 42,
-     "code": 0
+     "precipProb": 25,
+     "code": 1
     },
     {
      "time": "2026-09-05T05:00",
-     "temp": 9.1,
-     "precipProb": 35,
+     "temp": 9.2,
+     "precipProb": 22,
      "code": 0
     },
     {
      "time": "2026-09-05T06:00",
      "temp": 9.1,
-     "precipProb": 25,
+     "precipProb": 14,
      "code": 0
     },
     {
      "time": "2026-09-05T07:00",
-     "temp": 9.5,
-     "precipProb": 15,
+     "temp": 9.6,
+     "precipProb": 6,
      "code": 0
     },
     {
      "time": "2026-09-05T08:00",
      "temp": 11.0,
-     "precipProb": 8,
+     "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T09:00",
      "temp": 13.2,
-     "precipProb": 9,
+     "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T10:00",
-     "temp": 15.3,
-     "precipProb": 15,
-     "code": 1
+     "temp": 15.5,
+     "precipProb": 2,
+     "code": 0
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 16.8,
-     "precipProb": 18,
-     "code": 1
+     "temp": 17.1,
+     "precipProb": 6,
+     "code": 0
     },
     {
      "time": "2026-09-05T12:00",
-     "temp": 18.2,
-     "precipProb": 14,
+     "temp": 18.7,
+     "precipProb": 11,
      "code": 1
     },
     {
      "time": "2026-09-05T13:00",
      "temp": 19.2,
-     "precipProb": 8,
-     "code": 0
+     "precipProb": 17,
+     "code": 51
     },
     {
      "time": "2026-09-05T14:00",
-     "temp": 19.9,
-     "precipProb": 10,
-     "code": 0
+     "temp": 19.7,
+     "precipProb": 22,
+     "code": 51
     },
     {
      "time": "2026-09-05T15:00",
-     "temp": 19.7,
-     "precipProb": 27,
-     "code": 3
+     "temp": 19.8,
+     "precipProb": 24,
+     "code": 1
     },
     {
      "time": "2026-09-05T16:00",
-     "temp": 16.5,
-     "precipProb": 51,
-     "code": 51
+     "temp": 19.1,
+     "precipProb": 26,
+     "code": 1
     },
     {
      "time": "2026-09-05T17:00",
-     "temp": 14.2,
-     "precipProb": 69,
-     "code": 80
+     "temp": 17.8,
+     "precipProb": 25,
+     "code": 1
     },
     {
      "time": "2026-09-05T18:00",
-     "temp": 14.6,
-     "precipProb": 75,
-     "code": 51
+     "temp": 16.2,
+     "precipProb": 22,
+     "code": 2
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 14.4,
-     "precipProb": 75,
+     "temp": 15.2,
+     "precipProb": 17,
      "code": 3
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 14.5,
+     "precipProb": 14,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 13.2,
+     "precipProb": 16,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 12.6,
+     "precipProb": 20,
+     "code": 1
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 11.8,
+     "precipProb": 22,
+     "code": 1
     }
    ]
   },
@@ -280,261 +280,261 @@
    "lon": 28.2293,
    "elevation": 1376.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 13.9,
-    "feels": 11.1,
-    "humidity": 91,
+    "time": "2026-09-05T00:45",
+    "temp": 12.6,
+    "feels": 9.4,
+    "humidity": 82,
     "isDay": false,
-    "precip": 0.5,
-    "code": 80,
-    "cloud": 100,
-    "pressure": 1020.7,
-    "wind": 23.9,
-    "gust": 49.7,
-    "windDir": 109
+    "precip": 0.0,
+    "code": 1,
+    "cloud": 40,
+    "pressure": 1021.8,
+    "wind": 21.5,
+    "gust": 49.0,
+    "windDir": 99
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 80,
-    "tmax": 24.6,
-    "tmin": 13.1,
-    "sunrise": "2026-09-04T06:16",
-    "sunset": "2026-09-04T17:56",
-    "uvMax": 6.45,
-    "precipSum": 8.5,
-    "precipProb": 95,
-    "windMax": 26.3
+    "date": "2026-09-05",
+    "code": 53,
+    "tmax": 21.3,
+    "tmin": 11.1,
+    "sunrise": "2026-09-05T06:15",
+    "sunset": "2026-09-05T17:56",
+    "uvMax": 7.35,
+    "precipSum": 0.8,
+    "precipProb": 71,
+    "windMax": 22.2
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 80,
-     "tmax": 24.6,
-     "tmin": 13.1,
-     "sunrise": "2026-09-04T06:16",
-     "sunset": "2026-09-04T17:56",
-     "uvMax": 6.45,
-     "precipSum": 8.5,
-     "precipProb": 95,
-     "windMax": 26.3
-    },
-    {
      "date": "2026-09-05",
      "code": 53,
-     "tmax": 21.9,
-     "tmin": 11.4,
+     "tmax": 21.3,
+     "tmin": 11.1,
      "sunrise": "2026-09-05T06:15",
      "sunset": "2026-09-05T17:56",
      "uvMax": 7.35,
-     "precipSum": 2.1,
-     "precipProb": 78,
-     "windMax": 21.6
+     "precipSum": 0.8,
+     "precipProb": 71,
+     "windMax": 22.2
     },
     {
      "date": "2026-09-06",
-     "code": 95,
-     "tmax": 18.3,
-     "tmin": 11.5,
+     "code": 81,
+     "tmax": 18.8,
+     "tmin": 11.6,
      "sunrise": "2026-09-06T06:14",
      "sunset": "2026-09-06T17:56",
      "uvMax": 6.0,
-     "precipSum": 31.3,
+     "precipSum": 15.3,
      "precipProb": 100,
-     "windMax": 20.5
+     "windMax": 20.6
     },
     {
      "date": "2026-09-07",
-     "code": 80,
-     "tmax": 18.2,
-     "tmin": 12.5,
+     "code": 53,
+     "tmax": 17.9,
+     "tmin": 11.8,
      "sunrise": "2026-09-07T06:12",
      "sunset": "2026-09-07T17:57",
      "uvMax": 1.45,
-     "precipSum": 11.3,
-     "precipProb": 98,
-     "windMax": 18.8
+     "precipSum": 5.3,
+     "precipProb": 99,
+     "windMax": 16.8
     },
     {
      "date": "2026-09-08",
      "code": 51,
-     "tmax": 17.5,
-     "tmin": 11.4,
+     "tmax": 17.7,
+     "tmin": 11.7,
      "sunrise": "2026-09-08T06:11",
      "sunset": "2026-09-08T17:57",
      "uvMax": 7.5,
-     "precipSum": 0.8,
-     "precipProb": 54,
-     "windMax": 11.1
+     "precipSum": 0.3,
+     "precipProb": 52,
+     "windMax": 10.9
     },
     {
      "date": "2026-09-09",
-     "code": 3,
-     "tmax": 18.1,
-     "tmin": 9.9,
+     "code": 51,
+     "tmax": 18.6,
+     "tmin": 10.2,
      "sunrise": "2026-09-09T06:10",
      "sunset": "2026-09-09T17:58",
      "uvMax": 7.5,
-     "precipSum": 0.0,
-     "precipProb": 10,
-     "windMax": 7.2
+     "precipSum": 0.3,
+     "precipProb": 18,
+     "windMax": 7.7
     },
     {
      "date": "2026-09-10",
      "code": 51,
      "tmax": 22.1,
-     "tmin": 10.0,
+     "tmin": 10.1,
      "sunrise": "2026-09-10T06:09",
      "sunset": "2026-09-10T17:58",
      "uvMax": 7.55,
      "precipSum": 0.6,
-     "precipProb": 14,
-     "windMax": 8.2
+     "precipProb": 21,
+     "windMax": 7.0
+    },
+    {
+     "date": "2026-09-11",
+     "code": 0,
+     "tmax": 25.4,
+     "tmin": 13.5,
+     "sunrise": "2026-09-11T06:08",
+     "sunset": "2026-09-11T17:58",
+     "uvMax": 7.7,
+     "precipSum": 0.0,
+     "precipProb": 6,
+     "windMax": 6.5
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 13.9,
-     "precipProb": 94,
-     "code": 80
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 13.1,
-     "precipProb": 92,
-     "code": 80
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 13.3,
-     "precipProb": 89,
-     "code": 51
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 13.4,
-     "precipProb": 82,
-     "code": 3
-    },
-    {
      "time": "2026-09-05T00:00",
-     "temp": 13.2,
-     "precipProb": 70,
+     "temp": 12.7,
+     "precipProb": 71,
      "code": 2
     },
     {
      "time": "2026-09-05T01:00",
-     "temp": 12.7,
-     "precipProb": 55,
-     "code": 51
+     "temp": 12.6,
+     "precipProb": 42,
+     "code": 1
     },
     {
      "time": "2026-09-05T02:00",
-     "temp": 12.2,
-     "precipProb": 41,
+     "temp": 12.4,
+     "precipProb": 20,
      "code": 1
     },
     {
      "time": "2026-09-05T03:00",
-     "temp": 11.9,
-     "precipProb": 30,
-     "code": 1
+     "temp": 12.1,
+     "precipProb": 11,
+     "code": 0
     },
     {
      "time": "2026-09-05T04:00",
-     "temp": 11.7,
-     "precipProb": 21,
-     "code": 1
+     "temp": 11.6,
+     "precipProb": 9,
+     "code": 0
     },
     {
      "time": "2026-09-05T05:00",
-     "temp": 11.5,
-     "precipProb": 14,
-     "code": 1
+     "temp": 11.4,
+     "precipProb": 8,
+     "code": 0
     },
     {
      "time": "2026-09-05T06:00",
-     "temp": 11.4,
-     "precipProb": 11,
-     "code": 51
+     "temp": 11.1,
+     "precipProb": 6,
+     "code": 0
     },
     {
      "time": "2026-09-05T07:00",
-     "temp": 11.8,
-     "precipProb": 11,
+     "temp": 11.5,
+     "precipProb": 4,
      "code": 0
     },
     {
      "time": "2026-09-05T08:00",
-     "temp": 13.7,
-     "precipProb": 12,
-     "code": 0
-    },
-    {
-     "time": "2026-09-05T09:00",
-     "temp": 15.9,
-     "precipProb": 16,
+     "temp": 13.4,
+     "precipProb": 4,
      "code": 1
     },
     {
+     "time": "2026-09-05T09:00",
+     "temp": 15.7,
+     "precipProb": 7,
+     "code": 2
+    },
+    {
      "time": "2026-09-05T10:00",
-     "temp": 17.8,
-     "precipProb": 22,
+     "temp": 17.1,
+     "precipProb": 11,
      "code": 1
     },
     {
      "time": "2026-09-05T11:00",
      "temp": 19.2,
-     "precipProb": 25,
-     "code": 0
+     "precipProb": 14,
+     "code": 1
     },
     {
      "time": "2026-09-05T12:00",
      "temp": 20.7,
-     "precipProb": 20,
+     "precipProb": 15,
      "code": 0
     },
     {
      "time": "2026-09-05T13:00",
-     "temp": 21.3,
-     "precipProb": 12,
+     "temp": 20.8,
+     "precipProb": 15,
      "code": 0
     },
     {
      "time": "2026-09-05T14:00",
-     "temp": 21.8,
-     "precipProb": 8,
-     "code": 0
+     "temp": 21.3,
+     "precipProb": 16,
+     "code": 51
     },
     {
      "time": "2026-09-05T15:00",
-     "temp": 21.9,
-     "precipProb": 13,
+     "temp": 21.2,
+     "precipProb": 17,
      "code": 1
     },
     {
      "time": "2026-09-05T16:00",
-     "temp": 21.1,
-     "precipProb": 22,
-     "code": 3
+     "temp": 20.2,
+     "precipProb": 19,
+     "code": 1
     },
     {
      "time": "2026-09-05T17:00",
-     "temp": 18.7,
-     "precipProb": 31,
-     "code": 51
+     "temp": 18.9,
+     "precipProb": 20,
+     "code": 1
     },
     {
      "time": "2026-09-05T18:00",
      "temp": 17.1,
-     "precipProb": 40,
-     "code": 51
+     "precipProb": 19,
+     "code": 3
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 16.2,
-     "precipProb": 49,
+     "temp": 15.9,
+     "precipProb": 16,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 15.3,
+     "precipProb": 18,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 14.2,
+     "precipProb": 28,
+     "code": 53
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 13.7,
+     "precipProb": 41,
      "code": 51
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 12.8,
+     "precipProb": 49,
+     "code": 2
     }
    ]
   },
@@ -547,199 +547,175 @@
    "lon": 18.4241,
    "elevation": 17.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 15.1,
-    "feels": 9.4,
-    "humidity": 61,
+    "time": "2026-09-05T00:45",
+    "temp": 14.0,
+    "feels": 9.0,
+    "humidity": 68,
     "isDay": false,
     "precip": 0.0,
-    "code": 1,
-    "cloud": 30,
-    "pressure": 1024.5,
-    "wind": 35.1,
-    "gust": 104.4,
-    "windDir": 131
+    "code": 0,
+    "cloud": 4,
+    "pressure": 1022.5,
+    "wind": 31.3,
+    "gust": 96.1,
+    "windDir": 137
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 3,
-    "tmax": 19.6,
-    "tmin": 13.6,
-    "sunrise": "2026-09-04T07:00",
-    "sunset": "2026-09-04T18:30",
-    "uvMax": 6.05,
+    "date": "2026-09-05",
+    "code": 1,
+    "tmax": 23.0,
+    "tmin": 12.2,
+    "sunrise": "2026-09-05T06:59",
+    "sunset": "2026-09-05T18:30",
+    "uvMax": 6.1,
     "precipSum": 0.0,
     "precipProb": 0,
-    "windMax": 36.9
+    "windMax": 34.3
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 3,
-     "tmax": 19.6,
-     "tmin": 13.6,
-     "sunrise": "2026-09-04T07:00",
-     "sunset": "2026-09-04T18:30",
-     "uvMax": 6.05,
-     "precipSum": 0.0,
-     "precipProb": 0,
-     "windMax": 36.9
-    },
-    {
      "date": "2026-09-05",
      "code": 1,
-     "tmax": 22.7,
-     "tmin": 12.7,
+     "tmax": 23.0,
+     "tmin": 12.2,
      "sunrise": "2026-09-05T06:59",
      "sunset": "2026-09-05T18:30",
      "uvMax": 6.1,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 34.0
+     "windMax": 34.3
     },
     {
      "date": "2026-09-06",
      "code": 1,
-     "tmax": 27.8,
-     "tmin": 13.3,
+     "tmax": 27.6,
+     "tmin": 13.6,
      "sunrise": "2026-09-06T06:57",
      "sunset": "2026-09-06T18:31",
      "uvMax": 6.15,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 23.8
+     "windMax": 22.9
     },
     {
      "date": "2026-09-07",
      "code": 0,
-     "tmax": 26.4,
-     "tmin": 17.3,
+     "tmax": 26.5,
+     "tmin": 17.0,
      "sunrise": "2026-09-07T06:56",
      "sunset": "2026-09-07T18:32",
      "uvMax": 6.2,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 9.8
+     "windMax": 9.9
     },
     {
      "date": "2026-09-08",
      "code": 0,
-     "tmax": 30.6,
-     "tmin": 16.3,
+     "tmax": 31.0,
+     "tmin": 15.3,
      "sunrise": "2026-09-08T06:55",
      "sunset": "2026-09-08T18:32",
      "uvMax": 6.25,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 13.8
+     "windMax": 11.1
     },
     {
      "date": "2026-09-09",
-     "code": 3,
-     "tmax": 24.9,
-     "tmin": 16.0,
+     "code": 2,
+     "tmax": 25.4,
+     "tmin": 15.7,
      "sunrise": "2026-09-09T06:53",
      "sunset": "2026-09-09T18:33",
      "uvMax": 6.3,
      "precipSum": 0.0,
-     "precipProb": 2,
-     "windMax": 21.2
+     "precipProb": 0,
+     "windMax": 20.4
     },
     {
      "date": "2026-09-10",
      "code": 3,
-     "tmax": 21.4,
-     "tmin": 15.0,
+     "tmax": 21.0,
+     "tmin": 15.4,
      "sunrise": "2026-09-10T06:52",
      "sunset": "2026-09-10T18:34",
      "uvMax": 4.6,
      "precipSum": 0.0,
      "precipProb": 2,
-     "windMax": 18.1
+     "windMax": 21.7
+    },
+    {
+     "date": "2026-09-11",
+     "code": 3,
+     "tmax": 19.6,
+     "tmin": 15.3,
+     "sunrise": "2026-09-11T06:50",
+     "sunset": "2026-09-11T18:34",
+     "uvMax": 4.2,
+     "precipSum": 0.0,
+     "precipProb": 4,
+     "windMax": 30.9
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 15.1,
-     "precipProb": 0,
-     "code": 1
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 14.7,
-     "precipProb": 0,
-     "code": 1
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 14.5,
-     "precipProb": 0,
-     "code": 1
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 14.2,
-     "precipProb": 0,
-     "code": 1
-    },
-    {
      "time": "2026-09-05T00:00",
-     "temp": 14.0,
+     "temp": 14.2,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T01:00",
-     "temp": 13.9,
+     "temp": 14.0,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T02:00",
-     "temp": 13.9,
+     "temp": 13.8,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T03:00",
-     "temp": 13.6,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-09-05T04:00",
-     "temp": 13.1,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-09-05T05:00",
-     "temp": 12.8,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-09-05T06:00",
-     "temp": 12.8,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-09-05T07:00",
-     "temp": 12.7,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
-     "time": "2026-09-05T08:00",
      "temp": 13.4,
      "precipProb": 0,
      "code": 0
     },
     {
+     "time": "2026-09-05T04:00",
+     "temp": 13.0,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T05:00",
+     "temp": 12.6,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T06:00",
+     "temp": 12.4,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T07:00",
+     "temp": 12.2,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T08:00",
+     "temp": 13.0,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
      "time": "2026-09-05T09:00",
-     "temp": 15.1,
+     "temp": 14.9,
      "precipProb": 0,
      "code": 0
     },
@@ -751,13 +727,13 @@
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 19.0,
+     "temp": 18.6,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T12:00",
-     "temp": 20.7,
+     "temp": 20.5,
      "precipProb": 0,
      "code": 0
     },
@@ -769,37 +745,61 @@
     },
     {
      "time": "2026-09-05T14:00",
-     "temp": 22.5,
+     "temp": 22.8,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T15:00",
-     "temp": 22.7,
+     "temp": 23.0,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T16:00",
-     "temp": 22.6,
+     "temp": 22.8,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T17:00",
-     "temp": 21.3,
+     "temp": 21.1,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T18:00",
-     "temp": 19.5,
+     "temp": 19.1,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 17.6,
+     "temp": 17.4,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 16.4,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 15.9,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 15.7,
+     "precipProb": 0,
+     "code": 1
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 15.5,
      "precipProb": 0,
      "code": 0
     }
@@ -814,260 +814,260 @@
    "lon": 31.0218,
    "elevation": 25.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 16.0,
-    "feels": 15.6,
-    "humidity": 94,
+    "time": "2026-09-05T00:45",
+    "temp": 15.7,
+    "feels": 16.3,
+    "humidity": 95,
     "isDay": false,
-    "precip": 0.3,
-    "code": 55,
+    "precip": 0.2,
+    "code": 53,
     "cloud": 100,
-    "pressure": 1029.1,
-    "wind": 13.9,
-    "gust": 36.4,
-    "windDir": 200
+    "pressure": 1029.4,
+    "wind": 6.8,
+    "gust": 17.6,
+    "windDir": 233
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 80,
-    "tmax": 21.7,
+    "date": "2026-09-05",
+    "code": 53,
+    "tmax": 19.5,
     "tmin": 15.6,
-    "sunrise": "2026-09-04T06:07",
-    "sunset": "2026-09-04T17:42",
-    "uvMax": 1.5,
-    "precipSum": 13.0,
+    "sunrise": "2026-09-05T06:06",
+    "sunset": "2026-09-05T17:43",
+    "uvMax": 4.3,
+    "precipSum": 3.4,
     "precipProb": 100,
-    "windMax": 31.3
+    "windMax": 10.0
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 80,
-     "tmax": 21.7,
-     "tmin": 15.6,
-     "sunrise": "2026-09-04T06:07",
-     "sunset": "2026-09-04T17:42",
-     "uvMax": 1.5,
-     "precipSum": 13.0,
-     "precipProb": 100,
-     "windMax": 31.3
-    },
-    {
      "date": "2026-09-05",
      "code": 53,
-     "tmax": 19.9,
-     "tmin": 15.3,
+     "tmax": 19.5,
+     "tmin": 15.6,
      "sunrise": "2026-09-05T06:06",
      "sunset": "2026-09-05T17:43",
      "uvMax": 4.3,
-     "precipSum": 3.8,
-     "precipProb": 94,
-     "windMax": 12.1
+     "precipSum": 3.4,
+     "precipProb": 100,
+     "windMax": 10.0
     },
     {
      "date": "2026-09-06",
-     "code": 80,
-     "tmax": 19.1,
-     "tmin": 12.9,
+     "code": 81,
+     "tmax": 19.3,
+     "tmin": 14.4,
      "sunrise": "2026-09-06T06:05",
      "sunset": "2026-09-06T17:43",
      "uvMax": 3.9,
-     "precipSum": 8.8,
+     "precipSum": 9.6,
      "precipProb": 97,
-     "windMax": 10.7
+     "windMax": 12.4
     },
     {
      "date": "2026-09-07",
      "code": 51,
      "tmax": 19.7,
-     "tmin": 15.6,
+     "tmin": 15.3,
      "sunrise": "2026-09-07T06:04",
      "sunset": "2026-09-07T17:44",
      "uvMax": 4.45,
-     "precipSum": 1.6,
-     "precipProb": 82,
-     "windMax": 19.1
+     "precipSum": 0.7,
+     "precipProb": 72,
+     "windMax": 19.5
     },
     {
      "date": "2026-09-08",
      "code": 1,
-     "tmax": 22.6,
-     "tmin": 16.1,
+     "tmax": 22.5,
+     "tmin": 14.4,
      "sunrise": "2026-09-08T06:02",
      "sunset": "2026-09-08T17:44",
      "uvMax": 6.6,
      "precipSum": 0.0,
-     "precipProb": 2,
-     "windMax": 25.3
+     "precipProb": 4,
+     "windMax": 21.7
     },
     {
      "date": "2026-09-09",
-     "code": 0,
-     "tmax": 23.1,
+     "code": 1,
+     "tmax": 23.0,
      "tmin": 15.6,
      "sunrise": "2026-09-09T06:01",
      "sunset": "2026-09-09T17:45",
      "uvMax": 6.65,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 23.3
+     "windMax": 24.0
     },
     {
      "date": "2026-09-10",
      "code": 0,
-     "tmax": 24.1,
-     "tmin": 15.8,
+     "tmax": 24.4,
+     "tmin": 15.7,
      "sunrise": "2026-09-10T06:00",
      "sunset": "2026-09-10T17:45",
      "uvMax": 6.8,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 14.1
+     "windMax": 12.6
+    },
+    {
+     "date": "2026-09-11",
+     "code": 51,
+     "tmax": 24.0,
+     "tmin": 17.3,
+     "sunrise": "2026-09-11T05:59",
+     "sunset": "2026-09-11T17:46",
+     "uvMax": 6.75,
+     "precipSum": 0.3,
+     "precipProb": 12,
+     "windMax": 23.4
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 16.0,
-     "precipProb": 98,
-     "code": 55
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 16.1,
-     "precipProb": 98,
-     "code": 55
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 15.9,
-     "precipProb": 97,
-     "code": 55
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 15.6,
-     "precipProb": 96,
-     "code": 55
-    },
-    {
      "time": "2026-09-05T00:00",
      "temp": 15.7,
-     "precipProb": 94,
+     "precipProb": 100,
      "code": 51
     },
     {
      "time": "2026-09-05T01:00",
+     "temp": 15.7,
+     "precipProb": 99,
+     "code": 53
+    },
+    {
+     "time": "2026-09-05T02:00",
+     "temp": 15.7,
+     "precipProb": 96,
+     "code": 53
+    },
+    {
+     "time": "2026-09-05T03:00",
      "temp": 15.6,
      "precipProb": 92,
      "code": 51
     },
     {
-     "time": "2026-09-05T02:00",
-     "temp": 15.5,
-     "precipProb": 88,
+     "time": "2026-09-05T04:00",
+     "temp": 15.6,
+     "precipProb": 87,
      "code": 51
     },
     {
-     "time": "2026-09-05T03:00",
-     "temp": 15.3,
-     "precipProb": 83,
-     "code": 53
-    },
-    {
-     "time": "2026-09-05T04:00",
-     "temp": 15.3,
-     "precipProb": 78,
-     "code": 53
-    },
-    {
      "time": "2026-09-05T05:00",
-     "temp": 15.3,
-     "precipProb": 71,
-     "code": 53
+     "temp": 15.6,
+     "precipProb": 80,
+     "code": 51
     },
     {
      "time": "2026-09-05T06:00",
-     "temp": 15.4,
-     "precipProb": 62,
+     "temp": 15.7,
+     "precipProb": 72,
      "code": 51
     },
     {
      "time": "2026-09-05T07:00",
-     "temp": 15.5,
-     "precipProb": 52,
+     "temp": 15.9,
+     "precipProb": 62,
      "code": 51
     },
     {
      "time": "2026-09-05T08:00",
-     "temp": 16.1,
-     "precipProb": 43,
+     "temp": 16.4,
+     "precipProb": 53,
      "code": 51
     },
     {
      "time": "2026-09-05T09:00",
-     "temp": 16.7,
-     "precipProb": 38,
+     "temp": 17.2,
+     "precipProb": 46,
      "code": 51
     },
     {
      "time": "2026-09-05T10:00",
-     "temp": 17.8,
-     "precipProb": 34,
+     "temp": 18.5,
+     "precipProb": 39,
      "code": 51
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 19.5,
-     "precipProb": 29,
+     "temp": 19.1,
+     "precipProb": 31,
      "code": 3
     },
     {
      "time": "2026-09-05T12:00",
-     "temp": 19.7,
+     "temp": 19.5,
      "precipProb": 20,
      "code": 3
     },
     {
      "time": "2026-09-05T13:00",
-     "temp": 19.9,
-     "precipProb": 10,
+     "temp": 19.5,
+     "precipProb": 8,
      "code": 3
     },
     {
      "time": "2026-09-05T14:00",
      "temp": 19.5,
-     "precipProb": 2,
-     "code": 3
+     "precipProb": 0,
+     "code": 2
     },
     {
      "time": "2026-09-05T15:00",
-     "temp": 19.3,
+     "temp": 19.2,
      "precipProb": 0,
-     "code": 2
+     "code": 0
     },
     {
      "time": "2026-09-05T16:00",
-     "temp": 19.1,
+     "temp": 19.2,
      "precipProb": 0,
-     "code": 2
+     "code": 1
     },
     {
      "time": "2026-09-05T17:00",
-     "temp": 18.3,
+     "temp": 18.6,
      "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T18:00",
-     "temp": 17.3,
+     "temp": 17.5,
      "precipProb": 0,
-     "code": 1
+     "code": 2
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 17.0,
+     "temp": 17.1,
      "precipProb": 0,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 17.1,
+     "precipProb": 0,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 17.1,
+     "precipProb": 1,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 17.0,
+     "precipProb": 1,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 16.7,
+     "precipProb": 2,
      "code": 3
     }
    ]
@@ -1081,177 +1081,153 @@
    "lon": 25.6022,
    "elevation": 83.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 15.5,
-    "feels": 11.6,
-    "humidity": 54,
+    "time": "2026-09-05T00:45",
+    "temp": 15.7,
+    "feels": 11.9,
+    "humidity": 59,
     "isDay": false,
     "precip": 0.0,
     "code": 3,
-    "cloud": 90,
-    "pressure": 1030.8,
-    "wind": 20.5,
-    "gust": 40.3,
-    "windDir": 98
+    "cloud": 100,
+    "pressure": 1029.5,
+    "wind": 21.8,
+    "gust": 43.6,
+    "windDir": 75
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 80,
-    "tmax": 16.1,
-    "tmin": 14.6,
-    "sunrise": "2026-09-04T06:31",
-    "sunset": "2026-09-04T18:01",
-    "uvMax": 5.9,
-    "precipSum": 2.3,
-    "precipProb": 100,
-    "windMax": 32.7
+    "date": "2026-09-05",
+    "code": 53,
+    "tmax": 18.6,
+    "tmin": 15.3,
+    "sunrise": "2026-09-05T06:30",
+    "sunset": "2026-09-05T18:02",
+    "uvMax": 3.4,
+    "precipSum": 1.5,
+    "precipProb": 22,
+    "windMax": 22.4
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 80,
-     "tmax": 16.1,
-     "tmin": 14.6,
-     "sunrise": "2026-09-04T06:31",
-     "sunset": "2026-09-04T18:01",
-     "uvMax": 5.9,
-     "precipSum": 2.3,
-     "precipProb": 100,
-     "windMax": 32.7
-    },
-    {
      "date": "2026-09-05",
-     "code": 51,
-     "tmax": 18.4,
-     "tmin": 15.2,
+     "code": 53,
+     "tmax": 18.6,
+     "tmin": 15.3,
      "sunrise": "2026-09-05T06:30",
      "sunset": "2026-09-05T18:02",
      "uvMax": 3.4,
-     "precipSum": 0.7,
-     "precipProb": 51,
+     "precipSum": 1.5,
+     "precipProb": 22,
      "windMax": 22.4
     },
     {
      "date": "2026-09-06",
      "code": 53,
-     "tmax": 18.1,
-     "tmin": 15.8,
+     "tmax": 17.6,
+     "tmin": 15.6,
      "sunrise": "2026-09-06T06:29",
      "sunset": "2026-09-06T18:02",
      "uvMax": 2.9,
-     "precipSum": 1.4,
-     "precipProb": 54,
-     "windMax": 29.9
+     "precipSum": 0.8,
+     "precipProb": 26,
+     "windMax": 28.3
     },
     {
      "date": "2026-09-07",
-     "code": 1,
+     "code": 2,
      "tmax": 20.0,
-     "tmin": 16.4,
+     "tmin": 16.5,
      "sunrise": "2026-09-07T06:27",
      "sunset": "2026-09-07T18:03",
      "uvMax": 6.1,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 31.3
+     "windMax": 31.7
     },
     {
      "date": "2026-09-08",
-     "code": 3,
-     "tmax": 23.2,
-     "tmin": 13.9,
+     "code": 2,
+     "tmax": 23.1,
+     "tmin": 14.8,
      "sunrise": "2026-09-08T06:26",
      "sunset": "2026-09-08T18:04",
      "uvMax": 6.1,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 10.0
+     "windMax": 8.2
     },
     {
      "date": "2026-09-09",
-     "code": 0,
+     "code": 1,
      "tmax": 26.9,
-     "tmin": 15.7,
+     "tmin": 16.3,
      "sunrise": "2026-09-09T06:24",
      "sunset": "2026-09-09T18:04",
      "uvMax": 6.25,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 10.7
+     "windMax": 11.5
     },
     {
      "date": "2026-09-10",
      "code": 3,
      "tmax": 20.3,
-     "tmin": 16.6,
+     "tmin": 17.7,
      "sunrise": "2026-09-10T06:23",
      "sunset": "2026-09-10T18:05",
      "uvMax": 4.1,
      "precipSum": 0.0,
-     "precipProb": 7,
-     "windMax": 22.6
+     "precipProb": 12,
+     "windMax": 20.9
+    },
+    {
+     "date": "2026-09-11",
+     "code": 51,
+     "tmax": 18.9,
+     "tmin": 17.6,
+     "sunrise": "2026-09-11T06:22",
+     "sunset": "2026-09-11T18:06",
+     "uvMax": 4.8,
+     "precipSum": 1.2,
+     "precipProb": 55,
+     "windMax": 21.2
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 15.5,
-     "precipProb": 0,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 15.6,
-     "precipProb": 1,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 15.6,
-     "precipProb": 1,
-     "code": 2
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 15.5,
-     "precipProb": 2,
-     "code": 1
-    },
-    {
      "time": "2026-09-05T00:00",
-     "temp": 15.5,
-     "precipProb": 2,
+     "temp": 15.6,
+     "precipProb": 0,
      "code": 3
     },
     {
      "time": "2026-09-05T01:00",
-     "temp": 15.4,
-     "precipProb": 2,
-     "code": 1
+     "temp": 15.7,
+     "precipProb": 0,
+     "code": 3
     },
     {
      "time": "2026-09-05T02:00",
-     "temp": 15.2,
-     "precipProb": 2,
+     "temp": 15.4,
+     "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T03:00",
-     "temp": 15.2,
-     "precipProb": 1,
-     "code": 1
+     "temp": 15.5,
+     "precipProb": 0,
+     "code": 0
     },
     {
      "time": "2026-09-05T04:00",
-     "temp": 15.4,
-     "precipProb": 1,
-     "code": 1
+     "temp": 15.3,
+     "precipProb": 0,
+     "code": 0
     },
     {
      "time": "2026-09-05T05:00",
-     "temp": 15.6,
+     "temp": 15.4,
      "precipProb": 0,
-     "code": 2
+     "code": 1
     },
     {
      "time": "2026-09-05T06:00",
@@ -1261,81 +1237,105 @@
     },
     {
      "time": "2026-09-05T07:00",
-     "temp": 15.7,
+     "temp": 16.0,
      "precipProb": 0,
-     "code": 0
+     "code": 2
     },
     {
      "time": "2026-09-05T08:00",
-     "temp": 16.3,
+     "temp": 16.4,
      "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T09:00",
-     "temp": 16.8,
-     "precipProb": 1,
+     "temp": 16.9,
+     "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T10:00",
-     "temp": 17.4,
-     "precipProb": 2,
+     "temp": 17.3,
+     "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 18.0,
-     "precipProb": 4,
-     "code": 1
+     "temp": 17.8,
+     "precipProb": 2,
+     "code": 0
     },
     {
      "time": "2026-09-05T12:00",
      "temp": 18.3,
-     "precipProb": 9,
-     "code": 2
-    },
-    {
-     "time": "2026-09-05T13:00",
-     "temp": 18.4,
-     "precipProb": 16,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T14:00",
-     "temp": 18.0,
-     "precipProb": 20,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T15:00",
-     "temp": 18.0,
-     "precipProb": 18,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T16:00",
-     "temp": 17.6,
-     "precipProb": 12,
+     "precipProb": 7,
      "code": 1
     },
     {
-     "time": "2026-09-05T17:00",
-     "temp": 17.4,
-     "precipProb": 8,
+     "time": "2026-09-05T13:00",
+     "temp": 18.6,
+     "precipProb": 13,
+     "code": 1
+    },
+    {
+     "time": "2026-09-05T14:00",
+     "temp": 18.5,
+     "precipProb": 16,
      "code": 3
     },
     {
+     "time": "2026-09-05T15:00",
+     "temp": 18.3,
+     "precipProb": 12,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T16:00",
+     "temp": 18.1,
+     "precipProb": 5,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T17:00",
+     "temp": 17.5,
+     "precipProb": 0,
+     "code": 1
+    },
+    {
      "time": "2026-09-05T18:00",
-     "temp": 17.0,
-     "precipProb": 6,
+     "temp": 16.9,
+     "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 16.8,
-     "precipProb": 4,
+     "temp": 16.7,
+     "precipProb": 2,
      "code": 3
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 16.1,
+     "precipProb": 6,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 16.1,
+     "precipProb": 11,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 15.9,
+     "precipProb": 17,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 15.6,
+     "precipProb": 22,
+     "code": 53
     }
    ]
   },
@@ -1348,261 +1348,261 @@
    "lon": 26.1596,
    "elevation": 1414.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 15.5,
-    "feels": 10.4,
-    "humidity": 53,
+    "time": "2026-09-05T00:45",
+    "temp": 11.8,
+    "feels": 7.1,
+    "humidity": 69,
     "isDay": false,
     "precip": 0.0,
     "code": 3,
-    "cloud": 95,
-    "pressure": 1016.8,
-    "wind": 27.6,
-    "gust": 51.5,
-    "windDir": 65
+    "cloud": 82,
+    "pressure": 1019.9,
+    "wind": 25.5,
+    "gust": 47.5,
+    "windDir": 60
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 53,
-    "tmax": 18.3,
-    "tmin": 11.3,
-    "sunrise": "2026-09-04T06:26",
-    "sunset": "2026-09-04T18:02",
-    "uvMax": 5.65,
-    "precipSum": 3.5,
-    "precipProb": 100,
-    "windMax": 36.5
+    "date": "2026-09-05",
+    "code": 81,
+    "tmax": 20.9,
+    "tmin": 10.0,
+    "sunrise": "2026-09-05T06:25",
+    "sunset": "2026-09-05T18:02",
+    "uvMax": 6.55,
+    "precipSum": 11.4,
+    "precipProb": 99,
+    "windMax": 26.6
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 53,
-     "tmax": 18.3,
-     "tmin": 11.3,
-     "sunrise": "2026-09-04T06:26",
-     "sunset": "2026-09-04T18:02",
-     "uvMax": 5.65,
-     "precipSum": 3.5,
-     "precipProb": 100,
-     "windMax": 36.5
-    },
-    {
      "date": "2026-09-05",
-     "code": 95,
-     "tmax": 22.1,
-     "tmin": 10.2,
+     "code": 81,
+     "tmax": 20.9,
+     "tmin": 10.0,
      "sunrise": "2026-09-05T06:25",
      "sunset": "2026-09-05T18:02",
      "uvMax": 6.55,
-     "precipSum": 17.4,
-     "precipProb": 94,
-     "windMax": 26.0
+     "precipSum": 11.4,
+     "precipProb": 99,
+     "windMax": 26.6
     },
     {
      "date": "2026-09-06",
-     "code": 81,
+     "code": 80,
      "tmax": 18.1,
-     "tmin": 10.9,
+     "tmin": 10.4,
      "sunrise": "2026-09-06T06:24",
      "sunset": "2026-09-06T18:03",
      "uvMax": 6.15,
-     "precipSum": 18.7,
-     "precipProb": 99,
-     "windMax": 25.2
+     "precipSum": 19.4,
+     "precipProb": 100,
+     "windMax": 26.3
     },
     {
      "date": "2026-09-07",
      "code": 81,
-     "tmax": 20.8,
-     "tmin": 9.4,
+     "tmax": 18.5,
+     "tmin": 10.8,
      "sunrise": "2026-09-07T06:22",
      "sunset": "2026-09-07T18:03",
      "uvMax": 6.0,
-     "precipSum": 12.4,
-     "precipProb": 100,
-     "windMax": 27.0
+     "precipSum": 7.5,
+     "precipProb": 96,
+     "windMax": 32.1
     },
     {
      "date": "2026-09-08",
      "code": 51,
-     "tmax": 21.2,
+     "tmax": 21.0,
      "tmin": 9.7,
      "sunrise": "2026-09-08T06:21",
      "sunset": "2026-09-08T18:04",
      "uvMax": 7.0,
      "precipSum": 0.3,
      "precipProb": 45,
-     "windMax": 13.8
+     "windMax": 11.0
     },
     {
      "date": "2026-09-09",
-     "code": 2,
-     "tmax": 22.1,
-     "tmin": 10.8,
+     "code": 1,
+     "tmax": 22.8,
+     "tmin": 10.1,
      "sunrise": "2026-09-09T06:20",
      "sunset": "2026-09-09T18:04",
      "uvMax": 7.25,
      "precipSum": 0.0,
-     "precipProb": 31,
-     "windMax": 7.4
+     "precipProb": 20,
+     "windMax": 10.6
     },
     {
      "date": "2026-09-10",
-     "code": 0,
+     "code": 1,
      "tmax": 23.3,
      "tmin": 10.8,
      "sunrise": "2026-09-10T06:19",
      "sunset": "2026-09-10T18:05",
      "uvMax": 7.0,
      "precipSum": 0.0,
-     "precipProb": 6,
-     "windMax": 7.7
+     "precipProb": 4,
+     "windMax": 10.8
+    },
+    {
+     "date": "2026-09-11",
+     "code": 1,
+     "tmax": 24.4,
+     "tmin": 14.3,
+     "sunrise": "2026-09-11T06:18",
+     "sunset": "2026-09-11T18:05",
+     "uvMax": 7.35,
+     "precipSum": 0.0,
+     "precipProb": 0,
+     "windMax": 7.8
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 15.5,
-     "precipProb": 12,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 14.5,
-     "precipProb": 6,
-     "code": 2
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 13.8,
-     "precipProb": 3,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 13.0,
-     "precipProb": 0,
-     "code": 3
-    },
-    {
      "time": "2026-09-05T00:00",
-     "temp": 12.6,
+     "temp": 12.0,
      "precipProb": 0,
-     "code": 0
+     "code": 3
     },
     {
      "time": "2026-09-05T01:00",
-     "temp": 11.9,
-     "precipProb": 0,
+     "temp": 11.8,
+     "precipProb": 1,
      "code": 2
     },
     {
      "time": "2026-09-05T02:00",
-     "temp": 11.5,
-     "precipProb": 0,
+     "temp": 11.4,
+     "precipProb": 8,
      "code": 2
     },
     {
      "time": "2026-09-05T03:00",
-     "temp": 11.1,
-     "precipProb": 10,
+     "temp": 11.2,
+     "precipProb": 25,
      "code": 3
     },
     {
      "time": "2026-09-05T04:00",
-     "temp": 10.8,
-     "precipProb": 24,
-     "code": 2
+     "temp": 11.0,
+     "precipProb": 48,
+     "code": 51
     },
     {
      "time": "2026-09-05T05:00",
      "temp": 10.6,
-     "precipProb": 33,
-     "code": 2
+     "precipProb": 59,
+     "code": 0
     },
     {
      "time": "2026-09-05T06:00",
-     "temp": 10.2,
-     "precipProb": 33,
+     "temp": 10.3,
+     "precipProb": 48,
      "code": 1
     },
     {
      "time": "2026-09-05T07:00",
-     "temp": 10.4,
-     "precipProb": 30,
-     "code": 1
+     "temp": 10.0,
+     "precipProb": 27,
+     "code": 3
     },
     {
      "time": "2026-09-05T08:00",
-     "temp": 12.0,
-     "precipProb": 27,
+     "temp": 11.4,
+     "precipProb": 12,
      "code": 3
     },
     {
      "time": "2026-09-05T09:00",
-     "temp": 13.6,
-     "precipProb": 27,
-     "code": 3
+     "temp": 13.9,
+     "precipProb": 11,
+     "code": 1
     },
     {
      "time": "2026-09-05T10:00",
-     "temp": 15.8,
-     "precipProb": 29,
+     "temp": 16.0,
+     "precipProb": 16,
      "code": 2
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 17.4,
-     "precipProb": 33,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T12:00",
-     "temp": 19.9,
-     "precipProb": 42,
+     "temp": 18.1,
+     "precipProb": 25,
      "code": 3
     },
     {
-     "time": "2026-09-05T13:00",
-     "temp": 22.1,
-     "precipProb": 53,
+     "time": "2026-09-05T12:00",
+     "temp": 20.0,
+     "precipProb": 40,
      "code": 2
     },
     {
+     "time": "2026-09-05T13:00",
+     "temp": 20.9,
+     "precipProb": 58,
+     "code": 53
+    },
+    {
      "time": "2026-09-05T14:00",
-     "temp": 20.5,
-     "precipProb": 63,
+     "temp": 19.0,
+     "precipProb": 73,
      "code": 53
     },
     {
      "time": "2026-09-05T15:00",
-     "temp": 21.4,
-     "precipProb": 69,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T16:00",
-     "temp": 18.4,
-     "precipProb": 74,
+     "temp": 17.3,
+     "precipProb": 81,
      "code": 53
     },
     {
-     "time": "2026-09-05T17:00",
-     "temp": 17.2,
-     "precipProb": 78,
+     "time": "2026-09-05T16:00",
+     "temp": 17.0,
+     "precipProb": 85,
      "code": 51
     },
     {
+     "time": "2026-09-05T17:00",
+     "temp": 14.5,
+     "precipProb": 88,
+     "code": 53
+    },
+    {
      "time": "2026-09-05T18:00",
-     "temp": 14.8,
-     "precipProb": 81,
-     "code": 95
+     "temp": 14.3,
+     "precipProb": 92,
+     "code": 51
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 13.3,
-     "precipProb": 84,
-     "code": 80
+     "temp": 13.8,
+     "precipProb": 96,
+     "code": 53
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 13.2,
+     "precipProb": 98,
+     "code": 55
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 12.6,
+     "precipProb": 99,
+     "code": 81
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 12.7,
+     "precipProb": 99,
+     "code": 81
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 12.5,
+     "precipProb": 98,
+     "code": 51
     }
    ]
   },
@@ -1615,261 +1615,261 @@
    "lon": 30.9694,
    "elevation": 674.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 18.6,
-    "feels": 17.8,
-    "humidity": 72,
+    "time": "2026-09-05T00:45",
+    "temp": 16.1,
+    "feels": 15.7,
+    "humidity": 78,
     "isDay": false,
     "precip": 0.0,
     "code": 3,
-    "cloud": 99,
-    "pressure": 1023.9,
-    "wind": 13.1,
-    "gust": 31.3,
-    "windDir": 136
+    "cloud": 100,
+    "pressure": 1027.0,
+    "wind": 7.3,
+    "gust": 16.9,
+    "windDir": 126
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 80,
-    "tmax": 25.1,
-    "tmin": 13.4,
-    "sunrise": "2026-09-04T06:05",
-    "sunset": "2026-09-04T17:45",
-    "uvMax": 7.15,
-    "precipSum": 2.9,
-    "precipProb": 100,
-    "windMax": 23.1
+    "date": "2026-09-05",
+    "code": 53,
+    "tmax": 19.8,
+    "tmin": 14.5,
+    "sunrise": "2026-09-05T06:04",
+    "sunset": "2026-09-05T17:45",
+    "uvMax": 6.5,
+    "precipSum": 1.0,
+    "precipProb": 53,
+    "windMax": 11.4
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 80,
-     "tmax": 25.1,
-     "tmin": 13.4,
-     "sunrise": "2026-09-04T06:05",
-     "sunset": "2026-09-04T17:45",
-     "uvMax": 7.15,
-     "precipSum": 2.9,
-     "precipProb": 100,
-     "windMax": 23.1
-    },
-    {
      "date": "2026-09-05",
-     "code": 3,
-     "tmax": 20.8,
-     "tmin": 14.7,
+     "code": 53,
+     "tmax": 19.8,
+     "tmin": 14.5,
      "sunrise": "2026-09-05T06:04",
      "sunset": "2026-09-05T17:45",
      "uvMax": 6.5,
-     "precipSum": 0.0,
-     "precipProb": 35,
-     "windMax": 13.1
+     "precipSum": 1.0,
+     "precipProb": 53,
+     "windMax": 11.4
     },
     {
      "date": "2026-09-06",
-     "code": 80,
+     "code": 51,
      "tmax": 19.9,
-     "tmin": 15.0,
+     "tmin": 14.1,
      "sunrise": "2026-09-06T06:03",
      "sunset": "2026-09-06T17:46",
      "uvMax": 4.25,
-     "precipSum": 11.5,
+     "precipSum": 3.4,
      "precipProb": 88,
-     "windMax": 13.4
+     "windMax": 14.1
     },
     {
      "date": "2026-09-07",
      "code": 80,
-     "tmax": 17.5,
-     "tmin": 14.6,
+     "tmax": 18.1,
+     "tmin": 14.7,
      "sunrise": "2026-09-07T06:02",
      "sunset": "2026-09-07T17:46",
      "uvMax": 0.65,
-     "precipSum": 13.2,
+     "precipSum": 11.9,
      "precipProb": 100,
-     "windMax": 13.8
+     "windMax": 11.4
     },
     {
      "date": "2026-09-08",
      "code": 51,
-     "tmax": 19.0,
-     "tmin": 14.1,
+     "tmax": 19.1,
+     "tmin": 14.2,
      "sunrise": "2026-09-08T06:00",
      "sunset": "2026-09-08T17:46",
      "uvMax": 4.75,
-     "precipSum": 1.0,
-     "precipProb": 58,
-     "windMax": 7.8
+     "precipSum": 0.5,
+     "precipProb": 43,
+     "windMax": 9.6
     },
     {
      "date": "2026-09-09",
      "code": 51,
-     "tmax": 20.2,
-     "tmin": 14.7,
+     "tmax": 20.5,
+     "tmin": 14.6,
      "sunrise": "2026-09-09T05:59",
      "sunset": "2026-09-09T17:47",
      "uvMax": 7.25,
      "precipSum": 0.9,
-     "precipProb": 49,
-     "windMax": 10.2
+     "precipProb": 61,
+     "windMax": 12.1
     },
     {
      "date": "2026-09-10",
      "code": 3,
-     "tmax": 22.5,
-     "tmin": 13.9,
+     "tmax": 23.0,
+     "tmin": 13.3,
      "sunrise": "2026-09-10T05:58",
      "sunset": "2026-09-10T17:47",
      "uvMax": 7.5,
      "precipSum": 0.0,
      "precipProb": 5,
-     "windMax": 12.9
+     "windMax": 13.7
+    },
+    {
+     "date": "2026-09-11",
+     "code": 51,
+     "tmax": 27.0,
+     "tmin": 14.5,
+     "sunrise": "2026-09-11T05:57",
+     "sunset": "2026-09-11T17:48",
+     "uvMax": 7.6,
+     "precipSum": 0.3,
+     "precipProb": 4,
+     "windMax": 9.2
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 18.6,
-     "precipProb": 27,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 17.6,
-     "precipProb": 15,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 17.4,
-     "precipProb": 7,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 17.0,
-     "precipProb": 2,
-     "code": 3
-    },
-    {
      "time": "2026-09-05T00:00",
-     "temp": 16.7,
-     "precipProb": 1,
+     "temp": 16.4,
+     "precipProb": 4,
      "code": 3
     },
     {
      "time": "2026-09-05T01:00",
-     "temp": 16.1,
-     "precipProb": 3,
+     "temp": 16.0,
+     "precipProb": 9,
      "code": 3
     },
     {
      "time": "2026-09-05T02:00",
      "temp": 15.8,
-     "precipProb": 4,
+     "precipProb": 12,
      "code": 3
     },
     {
      "time": "2026-09-05T03:00",
-     "temp": 15.6,
-     "precipProb": 4,
-     "code": 3
+     "temp": 15.4,
+     "precipProb": 11,
+     "code": 2
     },
     {
      "time": "2026-09-05T04:00",
-     "temp": 14.7,
-     "precipProb": 3,
+     "temp": 14.6,
+     "precipProb": 9,
      "code": 3
     },
     {
      "time": "2026-09-05T05:00",
-     "temp": 15.2,
-     "precipProb": 2,
+     "temp": 15.1,
+     "precipProb": 6,
      "code": 3
     },
     {
      "time": "2026-09-05T06:00",
-     "temp": 15.2,
-     "precipProb": 1,
+     "temp": 15.1,
+     "precipProb": 4,
      "code": 3
     },
     {
      "time": "2026-09-05T07:00",
-     "temp": 15.6,
-     "precipProb": 1,
+     "temp": 15.4,
+     "precipProb": 2,
      "code": 3
     },
     {
      "time": "2026-09-05T08:00",
-     "temp": 16.3,
+     "temp": 16.5,
      "precipProb": 0,
      "code": 3
     },
     {
      "time": "2026-09-05T09:00",
-     "temp": 17.0,
+     "temp": 17.2,
      "precipProb": 0,
      "code": 3
     },
     {
      "time": "2026-09-05T10:00",
-     "temp": 17.9,
+     "temp": 17.7,
      "precipProb": 0,
      "code": 3
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 18.7,
+     "temp": 19.1,
      "precipProb": 0,
      "code": 3
     },
     {
      "time": "2026-09-05T12:00",
-     "temp": 20.1,
-     "precipProb": 1,
+     "temp": 19.6,
+     "precipProb": 4,
      "code": 3
     },
     {
      "time": "2026-09-05T13:00",
-     "temp": 20.8,
-     "precipProb": 3,
+     "temp": 19.8,
+     "precipProb": 8,
      "code": 3
     },
     {
      "time": "2026-09-05T14:00",
-     "temp": 20.7,
-     "precipProb": 4,
+     "temp": 19.7,
+     "precipProb": 12,
      "code": 3
     },
     {
      "time": "2026-09-05T15:00",
-     "temp": 20.5,
-     "precipProb": 4,
+     "temp": 19.5,
+     "precipProb": 13,
      "code": 3
     },
     {
      "time": "2026-09-05T16:00",
-     "temp": 19.9,
-     "precipProb": 4,
+     "temp": 19.2,
+     "precipProb": 12,
      "code": 3
     },
     {
      "time": "2026-09-05T17:00",
-     "temp": 19.4,
-     "precipProb": 4,
+     "temp": 19.0,
+     "precipProb": 12,
      "code": 3
     },
     {
      "time": "2026-09-05T18:00",
-     "temp": 18.7,
-     "precipProb": 3,
-     "code": 3
+     "temp": 18.2,
+     "precipProb": 13,
+     "code": 51
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 18.4,
-     "precipProb": 2,
+     "temp": 17.5,
+     "precipProb": 15,
      "code": 3
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 16.7,
+     "precipProb": 20,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 15.9,
+     "precipProb": 30,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 15.1,
+     "precipProb": 42,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 14.5,
+     "precipProb": 53,
+     "code": 53
     }
    ]
   },
@@ -1882,261 +1882,261 @@
    "lon": 29.4689,
    "elevation": 1311.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 15.8,
-    "feels": 12.7,
-    "humidity": 79,
+    "time": "2026-09-05T00:45",
+    "temp": 13.4,
+    "feels": 9.5,
+    "humidity": 78,
     "isDay": false,
     "precip": 0.0,
-    "code": 3,
-    "cloud": 100,
-    "pressure": 1020.7,
-    "wind": 25.7,
-    "gust": 56.2,
-    "windDir": 91
+    "code": 2,
+    "cloud": 73,
+    "pressure": 1022.8,
+    "wind": 25.4,
+    "gust": 53.6,
+    "windDir": 98
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 53,
-    "tmax": 26.8,
-    "tmin": 14.2,
-    "sunrise": "2026-09-04T06:10",
-    "sunset": "2026-09-04T17:52",
-    "uvMax": 7.3,
-    "precipSum": 1.7,
-    "precipProb": 76,
-    "windMax": 33.1
+    "date": "2026-09-05",
+    "code": 80,
+    "tmax": 19.0,
+    "tmin": 11.4,
+    "sunrise": "2026-09-05T06:09",
+    "sunset": "2026-09-05T17:52",
+    "uvMax": 7.4,
+    "precipSum": 5.3,
+    "precipProb": 73,
+    "windMax": 28.2
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 53,
-     "tmax": 26.8,
-     "tmin": 14.2,
-     "sunrise": "2026-09-04T06:10",
-     "sunset": "2026-09-04T17:52",
-     "uvMax": 7.3,
-     "precipSum": 1.7,
-     "precipProb": 76,
-     "windMax": 33.1
-    },
-    {
      "date": "2026-09-05",
-     "code": 51,
+     "code": 80,
      "tmax": 19.0,
-     "tmin": 12.1,
+     "tmin": 11.4,
      "sunrise": "2026-09-05T06:09",
      "sunset": "2026-09-05T17:52",
      "uvMax": 7.4,
-     "precipSum": 1.1,
-     "precipProb": 68,
-     "windMax": 29.6
+     "precipSum": 5.3,
+     "precipProb": 73,
+     "windMax": 28.2
     },
     {
      "date": "2026-09-06",
-     "code": 80,
-     "tmax": 18.8,
-     "tmin": 11.8,
+     "code": 81,
+     "tmax": 17.9,
+     "tmin": 11.7,
      "sunrise": "2026-09-06T06:08",
      "sunset": "2026-09-06T17:52",
      "uvMax": 7.4,
-     "precipSum": 6.4,
+     "precipSum": 13.3,
      "precipProb": 100,
-     "windMax": 27.8
+     "windMax": 28.0
     },
     {
      "date": "2026-09-07",
      "code": 53,
-     "tmax": 18.3,
-     "tmin": 12.3,
+     "tmax": 17.6,
+     "tmin": 12.2,
      "sunrise": "2026-09-07T06:07",
      "sunset": "2026-09-07T17:53",
      "uvMax": 2.65,
-     "precipSum": 1.5,
-     "precipProb": 43,
-     "windMax": 23.9
+     "precipSum": 0.9,
+     "precipProb": 45,
+     "windMax": 25.3
     },
     {
      "date": "2026-09-08",
      "code": 3,
-     "tmax": 18.6,
+     "tmax": 18.2,
      "tmin": 11.2,
      "sunrise": "2026-09-08T06:06",
      "sunset": "2026-09-08T17:53",
      "uvMax": 7.45,
      "precipSum": 0.0,
-     "precipProb": 29,
-     "windMax": 14.0
+     "precipProb": 27,
+     "windMax": 13.2
     },
     {
      "date": "2026-09-09",
      "code": 3,
-     "tmax": 19.8,
-     "tmin": 11.1,
+     "tmax": 18.5,
+     "tmin": 10.5,
      "sunrise": "2026-09-09T06:05",
      "sunset": "2026-09-09T17:53",
      "uvMax": 7.5,
      "precipSum": 0.0,
-     "precipProb": 8,
-     "windMax": 13.6
+     "precipProb": 6,
+     "windMax": 13.5
     },
     {
      "date": "2026-09-10",
-     "code": 51,
-     "tmax": 22.3,
-     "tmin": 9.3,
+     "code": 3,
+     "tmax": 21.4,
+     "tmin": 9.7,
      "sunrise": "2026-09-10T06:04",
      "sunset": "2026-09-10T17:54",
      "uvMax": 8.0,
-     "precipSum": 1.2,
-     "precipProb": 28,
-     "windMax": 7.3
+     "precipSum": 0.0,
+     "precipProb": 25,
+     "windMax": 7.2
+    },
+    {
+     "date": "2026-09-11",
+     "code": 0,
+     "tmax": 24.4,
+     "tmin": 13.0,
+     "sunrise": "2026-09-11T06:03",
+     "sunset": "2026-09-11T17:54",
+     "uvMax": 7.6,
+     "precipSum": 0.0,
+     "precipProb": 6,
+     "windMax": 13.1
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
+     "time": "2026-09-05T00:00",
+     "temp": 13.7,
+     "precipProb": 62,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T01:00",
+     "temp": 13.3,
+     "precipProb": 44,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T02:00",
+     "temp": 12.9,
+     "precipProb": 31,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T03:00",
+     "temp": 11.6,
+     "precipProb": 31,
+     "code": 55
+    },
+    {
+     "time": "2026-09-05T04:00",
+     "temp": 11.5,
+     "precipProb": 37,
+     "code": 53
+    },
+    {
+     "time": "2026-09-05T05:00",
+     "temp": 11.4,
+     "precipProb": 41,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T06:00",
+     "temp": 11.7,
+     "precipProb": 41,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T07:00",
+     "temp": 12.2,
+     "precipProb": 40,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T08:00",
+     "temp": 13.4,
+     "precipProb": 37,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T09:00",
+     "temp": 14.7,
+     "precipProb": 29,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T10:00",
+     "temp": 15.6,
+     "precipProb": 20,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T11:00",
+     "temp": 16.5,
+     "precipProb": 14,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T12:00",
+     "temp": 17.8,
+     "precipProb": 16,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T13:00",
+     "temp": 18.4,
+     "precipProb": 22,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T14:00",
+     "temp": 19.0,
+     "precipProb": 29,
+     "code": 1
+    },
+    {
+     "time": "2026-09-05T15:00",
+     "temp": 18.9,
+     "precipProb": 39,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T16:00",
+     "temp": 17.3,
+     "precipProb": 50,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T17:00",
      "temp": 15.8,
      "precipProb": 57,
      "code": 51
     },
     {
-     "time": "2026-09-04T21:00",
-     "temp": 14.8,
-     "precipProb": 62,
-     "code": 53
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 14.3,
-     "precipProb": 72,
-     "code": 51
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 14.2,
-     "precipProb": 76,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T00:00",
-     "temp": 13.6,
-     "precipProb": 68,
-     "code": 3
-    },
-    {
-     "time": "2026-09-05T01:00",
-     "temp": 13.1,
-     "precipProb": 54,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T02:00",
-     "temp": 12.5,
-     "precipProb": 43,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T03:00",
-     "temp": 12.2,
-     "precipProb": 38,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T04:00",
-     "temp": 12.2,
-     "precipProb": 36,
-     "code": 2
-    },
-    {
-     "time": "2026-09-05T05:00",
-     "temp": 12.1,
-     "precipProb": 33,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T06:00",
-     "temp": 12.4,
-     "precipProb": 26,
-     "code": 2
-    },
-    {
-     "time": "2026-09-05T07:00",
-     "temp": 12.8,
-     "precipProb": 19,
-     "code": 2
-    },
-    {
-     "time": "2026-09-05T08:00",
-     "temp": 13.6,
-     "precipProb": 12,
-     "code": 3
-    },
-    {
-     "time": "2026-09-05T09:00",
-     "temp": 14.4,
-     "precipProb": 7,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T10:00",
-     "temp": 16.4,
-     "precipProb": 4,
-     "code": 2
-    },
-    {
-     "time": "2026-09-05T11:00",
-     "temp": 16.9,
-     "precipProb": 2,
-     "code": 1
-    },
-    {
-     "time": "2026-09-05T12:00",
-     "temp": 17.8,
-     "precipProb": 2,
-     "code": 1
-    },
-    {
-     "time": "2026-09-05T13:00",
-     "temp": 19.0,
-     "precipProb": 5,
-     "code": 1
-    },
-    {
-     "time": "2026-09-05T14:00",
-     "temp": 19.0,
-     "precipProb": 10,
-     "code": 2
-    },
-    {
-     "time": "2026-09-05T15:00",
-     "temp": 18.6,
-     "precipProb": 21,
-     "code": 1
-    },
-    {
-     "time": "2026-09-05T16:00",
-     "temp": 17.5,
-     "precipProb": 35,
-     "code": 51
-    },
-    {
-     "time": "2026-09-05T17:00",
-     "temp": 15.9,
-     "precipProb": 45,
-     "code": 51
-    },
-    {
      "time": "2026-09-05T18:00",
-     "temp": 14.7,
-     "precipProb": 48,
-     "code": 2
+     "temp": 14.0,
+     "precipProb": 56,
+     "code": 80
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 14.0,
-     "precipProb": 48,
+     "temp": 13.2,
+     "precipProb": 52,
      "code": 51
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 12.7,
+     "precipProb": 51,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 12.4,
+     "precipProb": 56,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 12.4,
+     "precipProb": 65,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 12.5,
+     "precipProb": 73,
+     "code": 3
     }
    ]
   },
@@ -2149,147 +2149,123 @@
    "lon": 25.6442,
    "elevation": 1279.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 14.0,
-    "feels": 9.7,
-    "humidity": 85,
+    "time": "2026-09-05T00:45",
+    "temp": 13.1,
+    "feels": 10.5,
+    "humidity": 94,
     "isDay": false,
-    "precip": 0.3,
-    "code": 55,
-    "cloud": 99,
-    "pressure": 1013.1,
-    "wind": 32.9,
-    "gust": 68.0,
-    "windDir": 65
+    "precip": 0.2,
+    "code": 53,
+    "cloud": 92,
+    "pressure": 1017.8,
+    "wind": 22.5,
+    "gust": 46.8,
+    "windDir": 31
    },
    "today": {
-    "date": "2026-09-04",
+    "date": "2026-09-05",
     "code": 95,
-    "tmax": 22.3,
-    "tmin": 13.1,
-    "sunrise": "2026-09-04T06:26",
-    "sunset": "2026-09-04T18:06",
-    "uvMax": 7.2,
-    "precipSum": 15.1,
+    "tmax": 21.8,
+    "tmin": 12.5,
+    "sunrise": "2026-09-05T06:25",
+    "sunset": "2026-09-05T18:06",
+    "uvMax": 7.1,
+    "precipSum": 6.2,
     "precipProb": 100,
-    "windMax": 43.1
+    "windMax": 47.1
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 95,
-     "tmax": 22.3,
-     "tmin": 13.1,
-     "sunrise": "2026-09-04T06:26",
-     "sunset": "2026-09-04T18:06",
-     "uvMax": 7.2,
-     "precipSum": 15.1,
-     "precipProb": 100,
-     "windMax": 43.1
-    },
-    {
      "date": "2026-09-05",
-     "code": 80,
-     "tmax": 20.8,
-     "tmin": 12.1,
+     "code": 95,
+     "tmax": 21.8,
+     "tmin": 12.5,
      "sunrise": "2026-09-05T06:25",
      "sunset": "2026-09-05T18:06",
      "uvMax": 7.1,
-     "precipSum": 4.4,
+     "precipSum": 6.2,
      "precipProb": 100,
-     "windMax": 45.5
+     "windMax": 47.1
     },
     {
      "date": "2026-09-06",
-     "code": 82,
-     "tmax": 19.2,
-     "tmin": 12.1,
+     "code": 95,
+     "tmax": 18.9,
+     "tmin": 12.3,
      "sunrise": "2026-09-06T06:24",
      "sunset": "2026-09-06T18:07",
      "uvMax": 3.85,
-     "precipSum": 37.1,
+     "precipSum": 22.4,
      "precipProb": 98,
      "windMax": 36.6
     },
     {
      "date": "2026-09-07",
-     "code": 81,
-     "tmax": 20.8,
-     "tmin": 12.2,
+     "code": 53,
+     "tmax": 19.8,
+     "tmin": 11.4,
      "sunrise": "2026-09-07T06:23",
      "sunset": "2026-09-07T18:07",
      "uvMax": 4.15,
-     "precipSum": 8.5,
-     "precipProb": 89,
-     "windMax": 29.9
+     "precipSum": 2.0,
+     "precipProb": 81,
+     "windMax": 28.0
     },
     {
      "date": "2026-09-08",
      "code": 51,
-     "tmax": 20.1,
-     "tmin": 13.2,
+     "tmax": 20.3,
+     "tmin": 13.5,
      "sunrise": "2026-09-08T06:22",
      "sunset": "2026-09-08T18:07",
      "uvMax": 7.65,
      "precipSum": 0.9,
-     "precipProb": 33,
-     "windMax": 20.0
+     "precipProb": 29,
+     "windMax": 19.8
     },
     {
      "date": "2026-09-09",
      "code": 3,
-     "tmax": 20.5,
-     "tmin": 11.9,
+     "tmax": 20.6,
+     "tmin": 12.1,
      "sunrise": "2026-09-09T06:21",
      "sunset": "2026-09-09T18:08",
      "uvMax": 7.65,
      "precipSum": 0.0,
-     "precipProb": 2,
-     "windMax": 15.6
+     "precipProb": 8,
+     "windMax": 16.1
     },
     {
      "date": "2026-09-10",
-     "code": 1,
-     "tmax": 23.3,
-     "tmin": 10.1,
+     "code": 51,
+     "tmax": 22.2,
+     "tmin": 10.2,
      "sunrise": "2026-09-10T06:20",
      "sunset": "2026-09-10T18:08",
      "uvMax": 7.25,
+     "precipSum": 0.3,
+     "precipProb": 12,
+     "windMax": 9.2
+    },
+    {
+     "date": "2026-09-11",
+     "code": 0,
+     "tmax": 25.5,
+     "tmin": 12.9,
+     "sunrise": "2026-09-11T06:19",
+     "sunset": "2026-09-11T18:09",
+     "uvMax": 7.75,
      "precipSum": 0.0,
-     "precipProb": 2,
-     "windMax": 8.6
+     "precipProb": 0,
+     "windMax": 6.8
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 14.0,
-     "precipProb": 94,
-     "code": 55
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 14.2,
-     "precipProb": 97,
-     "code": 55
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 13.4,
-     "precipProb": 99,
-     "code": 53
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 13.3,
+     "time": "2026-09-05T00:00",
+     "temp": 13.1,
      "precipProb": 100,
      "code": 95
-    },
-    {
-     "time": "2026-09-05T00:00",
-     "temp": 13.3,
-     "precipProb": 100,
-     "code": 80
     },
     {
      "time": "2026-09-05T01:00",
@@ -2299,111 +2275,135 @@
     },
     {
      "time": "2026-09-05T02:00",
-     "temp": 12.9,
+     "temp": 12.6,
      "precipProb": 100,
-     "code": 51
+     "code": 55
     },
     {
      "time": "2026-09-05T03:00",
-     "temp": 12.4,
-     "precipProb": 98,
+     "temp": 12.7,
+     "precipProb": 94,
      "code": 53
     },
     {
      "time": "2026-09-05T04:00",
-     "temp": 12.1,
-     "precipProb": 93,
+     "temp": 12.5,
+     "precipProb": 85,
      "code": 51
     },
     {
      "time": "2026-09-05T05:00",
-     "temp": 12.4,
-     "precipProb": 82,
+     "temp": 12.5,
+     "precipProb": 71,
      "code": 2
     },
     {
      "time": "2026-09-05T06:00",
-     "temp": 12.3,
-     "precipProb": 56,
-     "code": 1
-    },
-    {
-     "time": "2026-09-05T07:00",
-     "temp": 12.5,
-     "precipProb": 23,
+     "temp": 12.6,
+     "precipProb": 49,
      "code": 2
     },
     {
-     "time": "2026-09-05T08:00",
-     "temp": 13.9,
-     "precipProb": 0,
+     "time": "2026-09-05T07:00",
+     "temp": 12.6,
+     "precipProb": 22,
      "code": 1
+    },
+    {
+     "time": "2026-09-05T08:00",
+     "temp": 14.4,
+     "precipProb": 4,
+     "code": 2
     },
     {
      "time": "2026-09-05T09:00",
      "temp": 15.6,
-     "precipProb": 0,
-     "code": 1
+     "precipProb": 1,
+     "code": 2
     },
     {
      "time": "2026-09-05T10:00",
-     "temp": 16.9,
-     "precipProb": 0,
+     "temp": 16.7,
+     "precipProb": 6,
      "code": 2
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 17.1,
-     "precipProb": 6,
-     "code": 2
+     "temp": 17.6,
+     "precipProb": 10,
+     "code": 3
     },
     {
      "time": "2026-09-05T12:00",
      "temp": 18.7,
      "precipProb": 8,
-     "code": 3
-    },
-    {
-     "time": "2026-09-05T13:00",
-     "temp": 20.1,
-     "precipProb": 10,
      "code": 2
     },
     {
+     "time": "2026-09-05T13:00",
+     "temp": 20.4,
+     "precipProb": 4,
+     "code": 3
+    },
+    {
      "time": "2026-09-05T14:00",
-     "temp": 20.8,
-     "precipProb": 16,
+     "temp": 21.4,
+     "precipProb": 4,
      "code": 1
     },
     {
      "time": "2026-09-05T15:00",
-     "temp": 20.5,
-     "precipProb": 29,
-     "code": 0
-    },
-    {
-     "time": "2026-09-05T16:00",
-     "temp": 19.2,
-     "precipProb": 47,
+     "temp": 21.8,
+     "precipProb": 12,
      "code": 1
     },
     {
-     "time": "2026-09-05T17:00",
-     "temp": 18.3,
-     "precipProb": 59,
+     "time": "2026-09-05T16:00",
+     "temp": 21.1,
+     "precipProb": 23,
      "code": 3
     },
     {
-     "time": "2026-09-05T18:00",
-     "temp": 16.4,
-     "precipProb": 62,
+     "time": "2026-09-05T17:00",
+     "temp": 18.4,
+     "precipProb": 35,
      "code": 51
     },
     {
+     "time": "2026-09-05T18:00",
+     "temp": 16.3,
+     "precipProb": 47,
+     "code": 3
+    },
+    {
      "time": "2026-09-05T19:00",
+     "temp": 15.8,
+     "precipProb": 58,
+     "code": 1
+    },
+    {
+     "time": "2026-09-05T20:00",
      "temp": 15.4,
-     "precipProb": 61,
-     "code": 53
+     "precipProb": 67,
+     "code": 1
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 15.4,
+     "precipProb": 71,
+     "code": 2
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 14.5,
+     "precipProb": 71,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 14.5,
+     "precipProb": 71,
+     "code": 1
     }
    ]
   },
@@ -2416,261 +2416,261 @@
    "lon": 24.7499,
    "elevation": 1211.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 16.1,
-    "feels": 10.4,
-    "humidity": 59,
+    "time": "2026-09-05T00:45",
+    "temp": 13.0,
+    "feels": 9.1,
+    "humidity": 77,
     "isDay": false,
-    "precip": 0.0,
-    "code": 3,
-    "cloud": 98,
-    "pressure": 1013.7,
-    "wind": 35.0,
-    "gust": 70.6,
-    "windDir": 79
+    "precip": 0.2,
+    "code": 53,
+    "cloud": 66,
+    "pressure": 1018.0,
+    "wind": 24.7,
+    "gust": 57.2,
+    "windDir": 47
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 96,
-    "tmax": 19.3,
-    "tmin": 11.4,
-    "sunrise": "2026-09-04T06:31",
-    "sunset": "2026-09-04T18:08",
-    "uvMax": 5.7,
-    "precipSum": 8.4,
-    "precipProb": 91,
-    "windMax": 49.1
+    "date": "2026-09-05",
+    "code": 95,
+    "tmax": 19.9,
+    "tmin": 11.7,
+    "sunrise": "2026-09-05T06:30",
+    "sunset": "2026-09-05T18:08",
+    "uvMax": 6.9,
+    "precipSum": 20.3,
+    "precipProb": 100,
+    "windMax": 30.6
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 96,
-     "tmax": 19.3,
-     "tmin": 11.4,
-     "sunrise": "2026-09-04T06:31",
-     "sunset": "2026-09-04T18:08",
-     "uvMax": 5.7,
-     "precipSum": 8.4,
-     "precipProb": 91,
-     "windMax": 49.1
-    },
-    {
      "date": "2026-09-05",
-     "code": 81,
-     "tmax": 17.7,
+     "code": 95,
+     "tmax": 19.9,
      "tmin": 11.7,
      "sunrise": "2026-09-05T06:30",
      "sunset": "2026-09-05T18:08",
      "uvMax": 6.9,
      "precipSum": 20.3,
      "precipProb": 100,
-     "windMax": 33.8
+     "windMax": 30.6
     },
     {
      "date": "2026-09-06",
      "code": 81,
-     "tmax": 19.3,
-     "tmin": 12.9,
+     "tmax": 19.1,
+     "tmin": 12.3,
      "sunrise": "2026-09-06T06:29",
      "sunset": "2026-09-06T18:09",
      "uvMax": 4.75,
-     "precipSum": 10.3,
+     "precipSum": 29.9,
      "precipProb": 97,
-     "windMax": 27.9
+     "windMax": 25.6
     },
     {
      "date": "2026-09-07",
      "code": 51,
-     "tmax": 20.9,
-     "tmin": 11.6,
+     "tmax": 19.9,
+     "tmin": 11.5,
      "sunrise": "2026-09-07T06:28",
      "sunset": "2026-09-07T18:09",
      "uvMax": 6.95,
-     "precipSum": 0.1,
-     "precipProb": 46,
-     "windMax": 16.5
+     "precipSum": 0.3,
+     "precipProb": 39,
+     "windMax": 16.3
     },
     {
      "date": "2026-09-08",
-     "code": 51,
-     "tmax": 21.0,
-     "tmin": 12.0,
+     "code": 3,
+     "tmax": 20.7,
+     "tmin": 11.5,
      "sunrise": "2026-09-08T06:27",
      "sunset": "2026-09-08T18:10",
      "uvMax": 6.75,
-     "precipSum": 0.9,
-     "precipProb": 29,
-     "windMax": 16.9
+     "precipSum": 0.0,
+     "precipProb": 20,
+     "windMax": 17.0
     },
     {
      "date": "2026-09-09",
      "code": 51,
-     "tmax": 23.2,
-     "tmin": 12.5,
+     "tmax": 22.9,
+     "tmin": 12.6,
      "sunrise": "2026-09-09T06:25",
      "sunset": "2026-09-09T18:10",
      "uvMax": 7.2,
      "precipSum": 0.3,
-     "precipProb": 20,
-     "windMax": 13.3
+     "precipProb": 12,
+     "windMax": 12.5
     },
     {
      "date": "2026-09-10",
-     "code": 2,
-     "tmax": 24.1,
-     "tmin": 12.0,
+     "code": 1,
+     "tmax": 23.5,
+     "tmin": 12.5,
      "sunrise": "2026-09-10T06:24",
      "sunset": "2026-09-10T18:11",
      "uvMax": 6.95,
      "precipSum": 0.0,
+     "precipProb": 2,
+     "windMax": 11.5
+    },
+    {
+     "date": "2026-09-11",
+     "code": 0,
+     "tmax": 24.6,
+     "tmin": 14.0,
+     "sunrise": "2026-09-11T06:23",
+     "sunset": "2026-09-11T18:11",
+     "uvMax": 5.6,
+     "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 11.6
+     "windMax": 7.6
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 16.1,
-     "precipProb": 18,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 15.8,
-     "precipProb": 16,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 15.2,
-     "precipProb": 19,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 14.5,
-     "precipProb": 22,
-     "code": 3
-    },
-    {
      "time": "2026-09-05T00:00",
-     "temp": 14.2,
-     "precipProb": 22,
-     "code": 3
-    },
-    {
-     "time": "2026-09-05T01:00",
-     "temp": 13.8,
-     "precipProb": 21,
-     "code": 3
-    },
-    {
-     "time": "2026-09-05T02:00",
-     "temp": 13.3,
-     "precipProb": 27,
+     "temp": 13.9,
+     "precipProb": 24,
      "code": 1
     },
     {
+     "time": "2026-09-05T01:00",
+     "temp": 12.7,
+     "precipProb": 49,
+     "code": 53
+    },
+    {
+     "time": "2026-09-05T02:00",
+     "temp": 12.4,
+     "precipProb": 69,
+     "code": 51
+    },
+    {
      "time": "2026-09-05T03:00",
-     "temp": 11.8,
-     "precipProb": 47,
-     "code": 80
+     "temp": 12.3,
+     "precipProb": 81,
+     "code": 53
     },
     {
      "time": "2026-09-05T04:00",
-     "temp": 12.0,
-     "precipProb": 73,
-     "code": 55
+     "temp": 11.7,
+     "precipProb": 88,
+     "code": 80
     },
     {
      "time": "2026-09-05T05:00",
-     "temp": 11.8,
-     "precipProb": 88,
-     "code": 81
+     "temp": 12.3,
+     "precipProb": 90,
+     "code": 51
     },
     {
      "time": "2026-09-05T06:00",
-     "temp": 11.7,
-     "precipProb": 78,
+     "temp": 12.2,
+     "precipProb": 84,
      "code": 3
     },
     {
      "time": "2026-09-05T07:00",
      "temp": 12.2,
-     "precipProb": 58,
-     "code": 3
+     "precipProb": 72,
+     "code": 51
     },
     {
      "time": "2026-09-05T08:00",
-     "temp": 12.9,
-     "precipProb": 47,
-     "code": 51
+     "temp": 11.8,
+     "precipProb": 67,
+     "code": 55
     },
     {
      "time": "2026-09-05T09:00",
-     "temp": 13.5,
-     "precipProb": 59,
-     "code": 51
+     "temp": 11.8,
+     "precipProb": 74,
+     "code": 55
     },
     {
      "time": "2026-09-05T10:00",
-     "temp": 11.9,
-     "precipProb": 81,
-     "code": 81
+     "temp": 13.2,
+     "precipProb": 88,
+     "code": 80
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 13.3,
+     "temp": 13.0,
      "precipProb": 98,
      "code": 80
     },
     {
      "time": "2026-09-05T12:00",
-     "temp": 14.4,
-     "precipProb": 100,
-     "code": 81
-    },
-    {
-     "time": "2026-09-05T13:00",
-     "temp": 15.2,
-     "precipProb": 100,
-     "code": 80
-    },
-    {
-     "time": "2026-09-05T14:00",
-     "temp": 17.2,
-     "precipProb": 100,
-     "code": 2
-    },
-    {
-     "time": "2026-09-05T15:00",
-     "temp": 17.7,
+     "temp": 15.8,
      "precipProb": 100,
      "code": 51
     },
     {
-     "time": "2026-09-05T16:00",
-     "temp": 16.8,
+     "time": "2026-09-05T13:00",
+     "temp": 18.3,
+     "precipProb": 100,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T14:00",
+     "temp": 19.9,
+     "precipProb": 100,
+     "code": 3
+    },
+    {
+     "time": "2026-09-05T15:00",
+     "temp": 19.1,
      "precipProb": 99,
      "code": 53
     },
     {
+     "time": "2026-09-05T16:00",
+     "temp": 16.2,
+     "precipProb": 97,
+     "code": 95
+    },
+    {
      "time": "2026-09-05T17:00",
-     "temp": 15.6,
-     "precipProb": 98,
+     "temp": 15.2,
+     "precipProb": 96,
      "code": 80
     },
     {
      "time": "2026-09-05T18:00",
-     "temp": 14.1,
-     "precipProb": 98,
-     "code": 53
+     "temp": 14.4,
+     "precipProb": 96,
+     "code": 81
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 14.0,
-     "precipProb": 99,
+     "temp": 13.9,
+     "precipProb": 95,
      "code": 51
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 13.6,
+     "precipProb": 94,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 13.7,
+     "precipProb": 90,
+     "code": 51
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 13.4,
+     "precipProb": 85,
+     "code": 80
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 12.9,
+     "precipProb": 82,
+     "code": 80
     }
    ]
   },
@@ -2683,260 +2683,260 @@
    "lon": 21.2561,
    "elevation": 805.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 15.7,
-    "feels": 13.7,
-    "humidity": 71,
+    "time": "2026-09-05T00:45",
+    "temp": 11.1,
+    "feels": 8.4,
+    "humidity": 70,
     "isDay": false,
     "precip": 0.0,
-    "code": 2,
-    "cloud": 73,
-    "pressure": 1010.8,
-    "wind": 15.1,
-    "gust": 34.2,
-    "windDir": 91
+    "code": 1,
+    "cloud": 28,
+    "pressure": 1015.4,
+    "wind": 11.7,
+    "gust": 18.0,
+    "windDir": 29
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 81,
-    "tmax": 18.7,
-    "tmin": 6.5,
-    "sunrise": "2026-09-04T06:45",
-    "sunset": "2026-09-04T18:22",
-    "uvMax": 5.65,
-    "precipSum": 4.7,
-    "precipProb": 100,
-    "windMax": 25.6
+    "date": "2026-09-05",
+    "code": 2,
+    "tmax": 21.6,
+    "tmin": 7.4,
+    "sunrise": "2026-09-05T06:44",
+    "sunset": "2026-09-05T18:22",
+    "uvMax": 6.55,
+    "precipSum": 0.0,
+    "precipProb": 35,
+    "windMax": 29.9
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 81,
-     "tmax": 18.7,
-     "tmin": 6.5,
-     "sunrise": "2026-09-04T06:45",
-     "sunset": "2026-09-04T18:22",
-     "uvMax": 5.65,
-     "precipSum": 4.7,
-     "precipProb": 100,
-     "windMax": 25.6
-    },
-    {
      "date": "2026-09-05",
-     "code": 53,
-     "tmax": 20.5,
-     "tmin": 7.8,
+     "code": 2,
+     "tmax": 21.6,
+     "tmin": 7.4,
      "sunrise": "2026-09-05T06:44",
      "sunset": "2026-09-05T18:22",
      "uvMax": 6.55,
-     "precipSum": 0.7,
-     "precipProb": 60,
-     "windMax": 25.1
+     "precipSum": 0.0,
+     "precipProb": 35,
+     "windMax": 29.9
     },
     {
      "date": "2026-09-06",
-     "code": 51,
-     "tmax": 22.6,
-     "tmin": 10.4,
+     "code": 3,
+     "tmax": 23.1,
+     "tmin": 9.6,
      "sunrise": "2026-09-06T06:43",
      "sunset": "2026-09-06T18:23",
      "uvMax": 7.1,
-     "precipSum": 0.1,
-     "precipProb": 25,
-     "windMax": 14.1
+     "precipSum": 0.0,
+     "precipProb": 20,
+     "windMax": 10.4
     },
     {
      "date": "2026-09-07",
-     "code": 1,
-     "tmax": 26.3,
-     "tmin": 10.6,
+     "code": 0,
+     "tmax": 25.4,
+     "tmin": 10.4,
      "sunrise": "2026-09-07T06:42",
      "sunset": "2026-09-07T18:23",
      "uvMax": 7.2,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 13.3
+     "windMax": 11.0
     },
     {
      "date": "2026-09-08",
      "code": 0,
-     "tmax": 28.0,
-     "tmin": 11.8,
+     "tmax": 28.4,
+     "tmin": 11.0,
      "sunrise": "2026-09-08T06:40",
      "sunset": "2026-09-08T18:24",
      "uvMax": 7.25,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 14.4
+     "windMax": 12.7
     },
     {
      "date": "2026-09-09",
      "code": 1,
-     "tmax": 30.0,
-     "tmin": 16.5,
+     "tmax": 30.2,
+     "tmin": 15.5,
      "sunrise": "2026-09-09T06:39",
      "sunset": "2026-09-09T18:24",
      "uvMax": 7.3,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 21.3
+     "windMax": 21.9
     },
     {
      "date": "2026-09-10",
-     "code": 3,
-     "tmax": 31.1,
+     "code": 0,
+     "tmax": 30.6,
      "tmin": 16.7,
      "sunrise": "2026-09-10T06:38",
      "sunset": "2026-09-10T18:25",
      "uvMax": 7.1,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 18.0
+     "windMax": 19.3
+    },
+    {
+     "date": "2026-09-11",
+     "code": 0,
+     "tmax": 31.9,
+     "tmin": 17.6,
+     "sunrise": "2026-09-11T06:37",
+     "sunset": "2026-09-11T18:25",
+     "uvMax": 7.4,
+     "precipSum": 0.0,
+     "precipProb": 3,
+     "windMax": 16.7
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 15.7,
-     "precipProb": 8,
-     "code": 2
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 15.1,
-     "precipProb": 5,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 15.0,
-     "precipProb": 9,
-     "code": 3
-    },
-    {
-     "time": "2026-09-04T23:00",
-     "temp": 14.0,
-     "precipProb": 12,
-     "code": 3
-    },
-    {
      "time": "2026-09-05T00:00",
-     "temp": 12.7,
-     "precipProb": 9,
+     "temp": 12.1,
+     "precipProb": 5,
      "code": 1
     },
     {
      "time": "2026-09-05T01:00",
-     "temp": 10.7,
-     "precipProb": 5,
-     "code": 2
+     "temp": 10.9,
+     "precipProb": 2,
+     "code": 1
     },
     {
      "time": "2026-09-05T02:00",
-     "temp": 10.0,
-     "precipProb": 2,
+     "temp": 10.5,
+     "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T03:00",
-     "temp": 9.1,
-     "precipProb": 1,
+     "temp": 9.4,
+     "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T04:00",
-     "temp": 8.5,
+     "temp": 8.6,
      "precipProb": 0,
-     "code": 3
+     "code": 0
     },
     {
      "time": "2026-09-05T05:00",
-     "temp": 9.5,
+     "temp": 8.0,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T06:00",
-     "temp": 8.2,
+     "temp": 7.7,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T07:00",
-     "temp": 7.8,
+     "temp": 7.4,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T08:00",
-     "temp": 9.9,
+     "temp": 9.5,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T09:00",
-     "temp": 13.7,
+     "temp": 13.3,
      "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T10:00",
-     "temp": 16.6,
+     "temp": 16.4,
      "precipProb": 0,
-     "code": 1
+     "code": 0
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 19.3,
-     "precipProb": 4,
+     "temp": 18.8,
+     "precipProb": 0,
      "code": 2
     },
     {
      "time": "2026-09-05T12:00",
-     "temp": 20.2,
-     "precipProb": 19,
+     "temp": 20.9,
+     "precipProb": 11,
      "code": 1
     },
     {
      "time": "2026-09-05T13:00",
-     "temp": 20.5,
-     "precipProb": 38,
-     "code": 3
+     "temp": 21.6,
+     "precipProb": 25,
+     "code": 2
     },
     {
      "time": "2026-09-05T14:00",
-     "temp": 18.5,
-     "precipProb": 53,
-     "code": 53
+     "temp": 21.5,
+     "precipProb": 35,
+     "code": 2
     },
     {
      "time": "2026-09-05T15:00",
-     "temp": 19.2,
-     "precipProb": 59,
-     "code": 51
+     "temp": 21.4,
+     "precipProb": 35,
+     "code": 1
     },
     {
      "time": "2026-09-05T16:00",
-     "temp": 19.3,
-     "precipProb": 60,
-     "code": 0
+     "temp": 20.1,
+     "precipProb": 31,
+     "code": 1
     },
     {
      "time": "2026-09-05T17:00",
      "temp": 18.7,
-     "precipProb": 55,
-     "code": 0
+     "precipProb": 25,
+     "code": 1
     },
     {
      "time": "2026-09-05T18:00",
-     "temp": 16.9,
-     "precipProb": 40,
+     "temp": 17.2,
+     "precipProb": 18,
      "code": 0
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 14.9,
-     "precipProb": 20,
+     "temp": 15.4,
+     "precipProb": 9,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 14.1,
+     "precipProb": 4,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 12.7,
+     "precipProb": 5,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 11.8,
+     "precipProb": 10,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 11.3,
+     "precipProb": 14,
      "code": 0
     }
    ]
@@ -2950,91 +2950,79 @@
    "lon": 20.6647,
    "elevation": 1455.0,
    "current": {
-    "time": "2026-09-04T20:00",
-    "temp": 4.9,
+    "time": "2026-09-05T00:45",
+    "temp": 2.9,
     "feels": -3.1,
-    "humidity": 85,
+    "humidity": 98,
     "isDay": false,
     "precip": 0.0,
-    "code": 1,
-    "cloud": 33,
-    "pressure": 1025.2,
-    "wind": 43.5,
-    "gust": 75.2,
-    "windDir": 111
+    "code": 3,
+    "cloud": 96,
+    "pressure": 1027.1,
+    "wind": 28.9,
+    "gust": 52.6,
+    "windDir": 119
    },
    "today": {
-    "date": "2026-09-04",
-    "code": 51,
-    "tmax": 9.8,
-    "tmin": 3.1,
-    "sunrise": "2026-09-04T06:50",
-    "sunset": "2026-09-04T18:22",
-    "uvMax": 6.6,
-    "precipSum": 0.2,
-    "precipProb": 87,
-    "windMax": 53.7
+    "date": "2026-09-05",
+    "code": 3,
+    "tmax": 14.5,
+    "tmin": 2.9,
+    "sunrise": "2026-09-05T06:49",
+    "sunset": "2026-09-05T18:22",
+    "uvMax": 6.7,
+    "precipSum": 0.0,
+    "precipProb": 0,
+    "windMax": 33.7
    },
    "daily": [
     {
-     "date": "2026-09-04",
-     "code": 51,
-     "tmax": 9.8,
-     "tmin": 3.1,
-     "sunrise": "2026-09-04T06:50",
-     "sunset": "2026-09-04T18:22",
-     "uvMax": 6.6,
-     "precipSum": 0.2,
-     "precipProb": 87,
-     "windMax": 53.7
-    },
-    {
      "date": "2026-09-05",
      "code": 3,
-     "tmax": 14.9,
-     "tmin": 2.8,
+     "tmax": 14.5,
+     "tmin": 2.9,
      "sunrise": "2026-09-05T06:49",
      "sunset": "2026-09-05T18:22",
      "uvMax": 6.7,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 32.1
+     "windMax": 33.7
     },
     {
      "date": "2026-09-06",
      "code": 3,
-     "tmax": 14.3,
+     "tmax": 13.8,
      "tmin": 6.3,
      "sunrise": "2026-09-06T06:48",
      "sunset": "2026-09-06T18:23",
      "uvMax": 6.6,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 34.2
+     "windMax": 35.9
     },
     {
      "date": "2026-09-07",
      "code": 3,
-     "tmax": 20.2,
-     "tmin": 7.8,
+     "tmax": 19.3,
+     "tmin": 7.6,
      "sunrise": "2026-09-07T06:46",
      "sunset": "2026-09-07T18:24",
      "uvMax": 6.8,
      "precipSum": 0.0,
-     "precipProb": 4,
-     "windMax": 14.2
+     "precipProb": 8,
+     "windMax": 13.4
     },
     {
      "date": "2026-09-08",
-     "code": 1,
-     "tmax": 21.1,
-     "tmin": 10.7,
+     "code": 3,
+     "tmax": 21.3,
+     "tmin": 9.3,
      "sunrise": "2026-09-08T06:45",
      "sunset": "2026-09-08T18:24",
      "uvMax": 6.85,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 13.7
+     "windMax": 13.4
     },
     {
      "date": "2026-09-09",
@@ -3046,75 +3034,63 @@
      "uvMax": 6.9,
      "precipSum": 0.0,
      "precipProb": 0,
-     "windMax": 18.4
+     "windMax": 21.1
     },
     {
      "date": "2026-09-10",
-     "code": 0,
-     "tmax": 24.0,
-     "tmin": 12.0,
+     "code": 3,
+     "tmax": 23.8,
+     "tmin": 12.7,
      "sunrise": "2026-09-10T06:42",
      "sunset": "2026-09-10T18:26",
      "uvMax": 6.95,
      "precipSum": 0.0,
-     "precipProb": 2,
-     "windMax": 19.3
+     "precipProb": 10,
+     "windMax": 23.1
+    },
+    {
+     "date": "2026-09-11",
+     "code": 51,
+     "tmax": 21.8,
+     "tmin": 12.5,
+     "sunrise": "2026-09-11T06:41",
+     "sunset": "2026-09-11T18:26",
+     "uvMax": 4.85,
+     "precipSum": 0.3,
+     "precipProb": 21,
+     "windMax": 15.7
     }
    ],
    "hourly": [
     {
-     "time": "2026-09-04T20:00",
-     "temp": 4.9,
-     "precipProb": 0,
-     "code": 1
-    },
-    {
-     "time": "2026-09-04T21:00",
-     "temp": 4.3,
-     "precipProb": 0,
-     "code": 1
-    },
-    {
-     "time": "2026-09-04T22:00",
-     "temp": 3.8,
+     "time": "2026-09-05T00:00",
+     "temp": 3.0,
      "precipProb": 0,
      "code": 2
     },
     {
-     "time": "2026-09-04T23:00",
-     "temp": 3.3,
-     "precipProb": 0,
-     "code": 3
-    },
-    {
-     "time": "2026-09-05T00:00",
-     "temp": 3.1,
-     "precipProb": 0,
-     "code": 3
-    },
-    {
      "time": "2026-09-05T01:00",
-     "temp": 2.8,
+     "temp": 2.9,
      "precipProb": 0,
      "code": 3
     },
     {
      "time": "2026-09-05T02:00",
-     "temp": 2.8,
-     "precipProb": 0,
-     "code": 3
-    },
-    {
-     "time": "2026-09-05T03:00",
      "temp": 3.1,
      "precipProb": 0,
      "code": 3
     },
     {
-     "time": "2026-09-05T04:00",
-     "temp": 3.5,
+     "time": "2026-09-05T03:00",
+     "temp": 3.3,
      "precipProb": 0,
      "code": 3
+    },
+    {
+     "time": "2026-09-05T04:00",
+     "temp": 3.9,
+     "precipProb": 0,
+     "code": 2
     },
     {
      "time": "2026-09-05T05:00",
@@ -3124,87 +3100,111 @@
     },
     {
      "time": "2026-09-05T06:00",
-     "temp": 4.0,
+     "temp": 3.9,
      "precipProb": 0,
      "code": 2
     },
     {
      "time": "2026-09-05T07:00",
-     "temp": 4.3,
+     "temp": 4.1,
      "precipProb": 0,
      "code": 2
     },
     {
      "time": "2026-09-05T08:00",
-     "temp": 5.5,
+     "temp": 5.4,
      "precipProb": 0,
      "code": 2
     },
     {
      "time": "2026-09-05T09:00",
-     "temp": 7.7,
+     "temp": 7.5,
      "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T10:00",
-     "temp": 10.3,
+     "temp": 10.2,
      "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T11:00",
-     "temp": 11.8,
+     "temp": 12.2,
      "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T12:00",
-     "temp": 13.1,
+     "temp": 13.9,
      "precipProb": 0,
      "code": 1
     },
     {
      "time": "2026-09-05T13:00",
+     "temp": 14.5,
+     "precipProb": 0,
+     "code": 1
+    },
+    {
+     "time": "2026-09-05T14:00",
      "temp": 14.4,
      "precipProb": 0,
      "code": 0
     },
     {
-     "time": "2026-09-05T14:00",
-     "temp": 14.9,
-     "precipProb": 0,
-     "code": 0
-    },
-    {
      "time": "2026-09-05T15:00",
-     "temp": 14.6,
+     "temp": 14.1,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T16:00",
-     "temp": 13.5,
+     "temp": 13.2,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T17:00",
-     "temp": 12.1,
+     "temp": 11.3,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T18:00",
-     "temp": 10.1,
+     "temp": 9.8,
      "precipProb": 0,
      "code": 0
     },
     {
      "time": "2026-09-05T19:00",
-     "temp": 8.6,
+     "temp": 8.9,
      "precipProb": 0,
      "code": 0
+    },
+    {
+     "time": "2026-09-05T20:00",
+     "temp": 8.5,
+     "precipProb": 0,
+     "code": 0
+    },
+    {
+     "time": "2026-09-05T21:00",
+     "temp": 8.4,
+     "precipProb": 0,
+     "code": 1
+    },
+    {
+     "time": "2026-09-05T22:00",
+     "temp": 8.2,
+     "precipProb": 0,
+     "code": 1
+    },
+    {
+     "time": "2026-09-05T23:00",
+     "temp": 7.8,
+     "precipProb": 0,
+     "code": 2
     }
    ]
   }
